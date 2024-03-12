@@ -127,6 +127,7 @@ struct Node {
 struct Node* newNode(struct CEcoLab1* pCMe, void *item) {
     struct Node* temp = pCMe->m_pIMem->pVTbl->Alloc(pCMe->m_pIMem, sizeof(struct Node));
     temp->data = item;
+    printf("%d", (temp->data));
     temp->left = temp->right = NULL;
     return temp;
 }
@@ -137,45 +138,44 @@ struct Node* insert(struct CEcoLab1* pCMe, struct Node* node, void *key, int (*c
 
     if (comp(key, node->data) < 0)
         node->left = insert(pCMe, node->left, key, comp);
-    else if (comp(key, node->data) > 0)
+    else
         node->right = insert(pCMe, node->right, key, comp);
 
     return node;
 }
 
 // Функция для обхода дерева в порядке возрастания
-void inOrder(struct Node* root, void *arr, int *index) {
+void inOrder(struct Node* root, void *arr, int *index, size_t elem_size) {
     if (root != NULL) {
-        inOrder(root->left, arr, index);
-        copy_bytes((char*)arr + (*index) * sizeof(int), root->data, sizeof(int));
+        inOrder(root->left, arr, index, elem_size);
+        copy_bytes((char*)arr + (*index) * elem_size, root->data, elem_size);
         (*index)++;
-        inOrder(root->right, arr, index);
+        inOrder(root->right, arr, index, elem_size);
     }
 }
 
-void freeTree(struct Node* node) {
+void freeTree(struct Node* node, CEcoLab1* pCMe) {
     if (node == NULL) return;
 
-    freeTree(node->left);
-    freeTree(node->right);
+    freeTree(node->left, pCMe);
+    freeTree(node->right, pCMe);
 
-    free(node->data);
-    free(node);
+    pCMe->m_pIMem->pVTbl->Free(pCMe->m_pIMem, node);
 }
 
 // Функция для сортировки массива с использованием Tree Sort
-void treeSort(struct CEcoLab1* pCMe, void *arr, int n, int size, int (*comp)(const void *, const void *)) {
+void treeSort(struct CEcoLab1* pCMe, void *arr, int n, size_t elem_size, int (*comp)(const void *, const void *)) {
     struct Node *root = NULL;
 
     // Вставляем все элементы массива в бинарное дерево
     for (int i = 0; i < n; i++)
-        root = insert(pCMe, root, (char*)arr + i * size, comp);
+        root = insert(pCMe, root, (char*)arr + i * elem_size, comp);
 
     // Обходим дерево в порядке возрастания и записываем отсортированные элементы обратно в массив
     int index = 0;
-    inOrder(root, arr, &index);
+    inOrder(root, arr, &index, elem_size);
     
-    freeTree(root);
+    freeTree(root, pCMe);
 }
 
 /*

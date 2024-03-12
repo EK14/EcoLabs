@@ -27,7 +27,7 @@
 
 void fillArrayWithRandomInts(int *arr, int arrSize) {
     for (size_t i = 0; i < arrSize; i ++) {
-        arr[i] = rand();
+        arr[i] = rand() % 10;
     }
 }
 
@@ -231,8 +231,10 @@ void testAndWriteToFile(FILE *file, IEcoMemoryAllocator1 *pIMem, IEcoLab1 *lab1r
 }
 
 // Указатель на функцию сравнения для типа int
-int compareInt(const void *a, const void *b) {
-    return (*(int*)a - *(int*)b);
+int compareInt(const void *a_ptr, const void *b_ptr) {
+    const int a = *(int *)a_ptr;
+    const int b = *(int *)b_ptr;
+    return (a > b) - (a < b);
 }
 
 // Указатель на функцию сравнения для типа float
@@ -254,10 +256,12 @@ void testIntSort(IEcoLab1 *pIEcoLab1, FILE *file, int arrSize, IEcoMemoryAllocat
     int* arr;
 
     //test
-    int arrSizeForTest = 10;
+    int arrSizeForTest = 5;
     arr = (int *) pIMem->pVTbl->Alloc(pIMem, arrSizeForTest * sizeof(int));
     fillArrayWithRandomInts(arr, arrSizeForTest);
+    printIntArray(arr, arrSizeForTest);
     pIEcoLab1->pVTbl->qsort(pIEcoLab1, arr, arrSizeForTest, sizeof(int), compareInt);
+    printIntArray(arr, arrSizeForTest);
     for (size_t i = 0; i < arrSizeForTest - 1; i++) {
         if (arr[i] > arr[i + 1]) {
             printf("insertionSort doesn't work for int.\n");
