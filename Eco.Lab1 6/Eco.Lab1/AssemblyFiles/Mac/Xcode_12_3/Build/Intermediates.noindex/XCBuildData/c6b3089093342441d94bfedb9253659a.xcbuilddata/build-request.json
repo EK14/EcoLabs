@@ -1,0 +1,56 @@
+{
+  "buildCommand" : {
+    "command" : "build",
+    "skipDependencies" : false,
+    "style" : "buildAndRun"
+  },
+  "configuredTargets" : [
+    {
+      "guid" : "ac821501a52e043ddef73386f363050f09e58258245b5bced549ec97524d81c8"
+    }
+  ],
+  "containerPath" : "/Users/elina/Developer/HSE/Lab1_architecture/Eco.Lab1 6/Eco.Lab1/AssemblyFiles/Mac/Xcode_12_3/Eco.Lab1UnitTest.xcodeproj",
+  "continueBuildingAfterErrors" : false,
+  "enableIndexBuildArena" : false,
+  "hideShellScriptEnvironment" : false,
+  "parameters" : {
+    "action" : "build",
+    "activeArchitecture" : "arm64",
+    "activeRunDestination" : {
+      "disableOnlyActiveArch" : false,
+      "platform" : "macosx",
+      "sdk" : "macosx14.2",
+      "sdkVariant" : "macos",
+      "supportedArchitectures" : [
+        "arm64e",
+        "arm64",
+        "x86_64"
+      ],
+      "targetArchitecture" : "arm64"
+    },
+    "arenaInfo" : {
+      "buildIntermediatesPath" : "/Users/elina/Developer/HSE/Lab1_architecture/Eco.Lab1 6/Eco.Lab1/AssemblyFiles/Mac/Xcode_12_3/Build/Intermediates.noindex",
+      "buildProductsPath" : "/Users/elina/Developer/HSE/Lab1_architecture/Eco.Lab1 6/Eco.Lab1/BuildFiles/Mac/$(ARCHS_STANDARD)",
+      "derivedDataPath" : "/Users/elina/Desktop/Eco.Lab1 5/Eco.Lab1/BuildFiles",
+      "indexDataStoreFolderPath" : "/Users/elina/Desktop/Eco.Lab1 5/Eco.Lab1/BuildFiles/Eco.Lab1UnitTest-fysthjkqdcmpxabmhtexlgkuwjmc/Index.noindex/DataStore",
+      "indexEnableDataStore" : true,
+      "indexPCHPath" : "/Users/elina/Desktop/Eco.Lab1 5/Eco.Lab1/BuildFiles/Eco.Lab1UnitTest-fysthjkqdcmpxabmhtexlgkuwjmc/Index.noindex/PrecompiledHeaders",
+      "pchPath" : "/Users/elina/Developer/HSE/Lab1_architecture/Eco.Lab1 6/Eco.Lab1/AssemblyFiles/Mac/Xcode_12_3/Build/Intermediates.noindex/PrecompiledHeaders"
+    },
+    "configurationName" : "Debug",
+    "overrides" : {
+      "synthesized" : {
+        "table" : {
+          "ENABLE_PREVIEWS" : "NO",
+          "ENABLE_XOJIT_PREVIEWS" : "NO"
+        }
+      }
+    }
+  },
+  "schemeCommand" : "launch",
+  "showNonLoggedProgress" : true,
+  "useDryRun" : false,
+  "useImplicitDependencies" : true,
+  "useLegacyBuildLocations" : false,
+  "useParallelTargets" : true
+}
