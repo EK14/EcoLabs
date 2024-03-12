@@ -1,5 +1,5 @@
 dependencies: \
-  /Users/elina/Developer/HSE/Lab1_architecture/Eco.Lab1\ 6/Eco.Lab1/UnitTestFiles/SourceFiles/EcoLab1.c \
+  /Users/elina/Developer/HSE/Lab1_architecture/Eco.Lab1/Eco.Lab1/UnitTestFiles/SourceFiles/EcoLab1.c \
   /Users/elina/Desktop/Eco.Framework/Eco.Core1/SharedFiles/IEcoSystem1.h \
   /Users/elina/Desktop/Eco.Framework/Eco.Core1/SharedFiles/IEcoBase1.h \
   /Users/elina/Desktop/Eco.Framework/Eco.Core1/SharedFiles/depend.h \
