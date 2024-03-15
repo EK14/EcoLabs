@@ -8,15 +8,15 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "98B347BC-F1EB-49A5-948E-550F9D67FD0B"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../../../SourceFiles/CEcoLab1.c"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "130"
-            endingLineNumber = "130"
-            landmarkName = "newNode(pCMe, item)"
+            startingLineNumber = "131"
+            endingLineNumber = "131"
+            landmarkName = "newNode(pCMe, item, elem_size)"
             landmarkType = "9">
          </BreakpointContent>
       </BreakpointProxy>

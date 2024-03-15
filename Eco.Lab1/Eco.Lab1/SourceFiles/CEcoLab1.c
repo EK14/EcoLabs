@@ -119,38 +119,38 @@ void copy_bytes(char *src, char *dst, size_t count) {
 
 // Структура для узла бинарного дерева
 struct Node {
-    void *data;
+    char *data;
     struct Node *left, *right;
 };
 
 // Функция для создания нового узла дерева
-struct Node* newNode(struct CEcoLab1* pCMe, void *item) {
+struct Node* newNode(struct CEcoLab1* pCMe, char *item, size_t elem_size) {
     struct Node* temp = pCMe->m_pIMem->pVTbl->Alloc(pCMe->m_pIMem, sizeof(struct Node));
-    temp->data = item;
-    printf("%d", (temp->data));
+    temp->data = pCMe->m_pIMem->pVTbl->Alloc(pCMe->m_pIMem, elem_size);
+    copy_bytes(item, temp->data, elem_size);
     temp->left = temp->right = NULL;
     return temp;
 }
 
 // Функция для вставки нового узла в бинарное дерево
-struct Node* insert(struct CEcoLab1* pCMe, struct Node* node, void *key, int (*comp)(const void *, const void *)) {
-    if (node == NULL) return newNode(pCMe, key);
+struct Node* insert(struct CEcoLab1* pCMe, struct Node* node, char *key, size_t elem_size, int (*comp)(const void *, const void *)) {
+    if (node == NULL) return newNode(pCMe, key, elem_size);
 
     if (comp(key, node->data) < 0)
-        node->left = insert(pCMe, node->left, key, comp);
+        node->left = insert(pCMe, node->left, key, elem_size, comp);
     else
-        node->right = insert(pCMe, node->right, key, comp);
+        node->right = insert(pCMe, node->right, key, elem_size, comp);
 
     return node;
 }
 
 // Функция для обхода дерева в порядке возрастания
-void inOrder(struct Node* root, void *arr, int *index, size_t elem_size) {
+void inOrder(struct Node* root, char **arr, size_t elem_size) {
     if (root != NULL) {
-        inOrder(root->left, arr, index, elem_size);
-        copy_bytes((char*)arr + (*index) * elem_size, root->data, elem_size);
-        (*index)++;
-        inOrder(root->right, arr, index, elem_size);
+        inOrder(root->left, arr, elem_size);
+        copy_bytes(root->data, *arr, elem_size);
+        *arr += elem_size;
+        inOrder(root->right, arr, elem_size);
     }
 }
 
@@ -164,16 +164,15 @@ void freeTree(struct Node* node, CEcoLab1* pCMe) {
 }
 
 // Функция для сортировки массива с использованием Tree Sort
-void treeSort(struct CEcoLab1* pCMe, void *arr, int n, size_t elem_size, int (*comp)(const void *, const void *)) {
+void treeSort(struct CEcoLab1* pCMe, char *arr, size_t n, size_t elem_size, int (*comp)(const void *, const void *)) {
     struct Node *root = NULL;
 
     // Вставляем все элементы массива в бинарное дерево
     for (int i = 0; i < n; i++)
-        root = insert(pCMe, root, (char*)arr + i * elem_size, comp);
+        root = insert(pCMe, root, (char*)arr + i * elem_size, elem_size, comp);
 
     // Обходим дерево в порядке возрастания и записываем отсортированные элементы обратно в массив
-    int index = 0;
-    inOrder(root, arr, &index, elem_size);
+    inOrder(root, &arr, elem_size);
     
     freeTree(root, pCMe);
 }
@@ -196,8 +195,6 @@ int16_t ECOCALLMETHOD CEcoLab1_qsort(
                                         size_t elem_size,
                                         int (__cdecl *compare)(const void *, const void*)) {
     CEcoLab1* pCMe = (CEcoLab1*)me;
-    void *buffer = 0;
-    int16_t index = 0;
 
     /* Проверка указателей */
     if (me == 0 || pData == 0 || compare == 0) {

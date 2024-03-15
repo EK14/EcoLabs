@@ -40,13 +40,10 @@ void *createFloatArray(IEcoMemoryAllocator1 *pIMem, size_t size) {
     return arr;
 }
 
-void *createDoubleArray(IEcoMemoryAllocator1 *pIMem, size_t size) {
-    size_t i;
-    double *arr = (double *) pIMem->pVTbl->Alloc(pIMem, size * sizeof(double));
-    for (i = 0; i < size; i++) {
-        arr[i] = ((double) (rand() %20003 - 10000)) / ((float)(rand() % 1000 + 1)) ;
+void fillArrayWithRandomDoubles(int *arr, int arrSize) {
+    for (int i = 0; i < arrSize; ++i) {
+        arr[i] = (double)rand() + ((double)rand() / RAND_MAX);
     }
-    return arr;
 }
 
 void *createStringArray(IEcoMemoryAllocator1 *pIMem, size_t size) {
@@ -256,12 +253,10 @@ void testIntSort(IEcoLab1 *pIEcoLab1, FILE *file, int arrSize, IEcoMemoryAllocat
     int* arr;
 
     //test
-    int arrSizeForTest = 5;
+    int arrSizeForTest = arrSize;
     arr = (int *) pIMem->pVTbl->Alloc(pIMem, arrSizeForTest * sizeof(int));
     fillArrayWithRandomInts(arr, arrSizeForTest);
-    printIntArray(arr, arrSizeForTest);
     pIEcoLab1->pVTbl->qsort(pIEcoLab1, arr, arrSizeForTest, sizeof(int), compareInt);
-    printIntArray(arr, arrSizeForTest);
     for (size_t i = 0; i < arrSizeForTest - 1; i++) {
         if (arr[i] > arr[i + 1]) {
             printf("insertionSort doesn't work for int.\n");
@@ -296,6 +291,49 @@ void testIntSort(IEcoLab1 *pIEcoLab1, FILE *file, int arrSize, IEcoMemoryAllocat
     fprintf(file, "%s,%s,%d,%lf\n", "qsort", "int", arrSize, qsortDuration);
 }
 
+void testDoubleSort(IEcoLab1 *pIEcoLab1, FILE *file, int arrSize, IEcoMemoryAllocator1 *pIMem) {
+    clock_t start, end;
+    double* arr;
+
+    //test
+    int arrSizeForTest = 10;
+    arr = (double *) pIMem->pVTbl->Alloc(pIMem, arrSizeForTest * sizeof(double));
+    fillArrayWithRandomDoubles(arr, arrSizeForTest);
+    pIEcoLab1->pVTbl->qsort(pIEcoLab1, arr, arrSizeForTest, sizeof(double), compareDouble);
+    for (size_t i = 0; i < arrSizeForTest - 1; i++) {
+        if (arr[i] > arr[i + 1]) {
+            printf("insertionSort doesn't work for double.\n");
+            return;
+        }
+    }
+    pIMem->pVTbl->Free(pIMem, arr);
+
+    //insertionSort
+    arr = (double *) pIMem->pVTbl->Alloc(pIMem, arrSize * sizeof(double));
+    fillArrayWithRandomDoubles(arr, arrSize);
+    start = clock();
+
+    pIEcoLab1->pVTbl->qsort(pIEcoLab1, arr, arrSize, sizeof(double), compareDouble);
+
+    end = clock();
+    double insertionSortDuration = (double)(end - start) / CLOCKS_PER_SEC;
+    pIMem->pVTbl->Free(pIMem, arr);
+
+    //qsort
+    arr = (double *) pIMem->pVTbl->Alloc(pIMem, arrSize * sizeof(double ));
+    fillArrayWithRandomDoubles(arr, arrSize);
+    start = clock();
+
+    qsort(arr, arrSize, sizeof(double), compareDouble);
+
+    end = clock();
+    double qsortDuration = (double)(end - start) / CLOCKS_PER_SEC;
+    pIMem->pVTbl->Free(pIMem, arr);
+
+    fprintf(file, "%s,%s,%d,%lf\n", "insertSort", "double", arrSize, insertionSortDuration);
+    fprintf(file, "%s,%s,%d,%lf\n", "qsort", "double", arrSize, qsortDuration);
+}
+
 
 /*
  *
@@ -321,7 +359,7 @@ int16_t EcoMain(IEcoUnknown* pIUnk) {
     /* Указатель на тестируемый интерфейс */
     IEcoLab1* pIEcoLab1 = 0;
 
-    int arrSizes[5] = {10000, 50000, 100000, 150000, 200000};
+    int arrSizes[5] = {1000, 5000, 10000, 15000, 20000};
 
 
     /* Проверка и создание системного интрефейса */
@@ -376,10 +414,9 @@ int16_t EcoMain(IEcoUnknown* pIUnk) {
     fprintf(resultFile, "sort,type,size,time\n");
     for (size_t i = 0; i < 5; i++) {
         testIntSort(pIEcoLab1, resultFile, arrSizes[i], pIMem);
-//        testDoubleSort(pIEcoLab1, resultFile, arrSizes[i], pIMem);
+        testDoubleSort(pIEcoLab1, resultFile, arrSizes[i], pIMem);
 //        testFloatSort(pIEcoLab1, resultFile, arrSizes[i], pIMem);
 //        testStringSort(pIEcoLab1, resultFile, arrSizes[i], pIMem);
-        printf("+");
     }
 
     /* Освлбождение блока памяти */
