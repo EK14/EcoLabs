@@ -62,8 +62,8 @@
             filePath = "../../../UnitTestFiles/SourceFiles/EcoLab1.c"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "417"
-            endingLineNumber = "417"
+            startingLineNumber = "360"
+            endingLineNumber = "360"
             landmarkName = "EcoMain(pIUnk)"
             landmarkType = "9">
             <Locations>
@@ -97,6 +97,36 @@
                   endingLineNumber = "417"
                   offsetFromSymbolStart = "700">
                </Location>
+               <Location
+                  uuid = "CA19A704-C910-4270-BF0F-F8A0E4F8FC2B - 12c7c6169ecc54cc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EcoMain"
+                  moduleName = "Eco.Lab1UnitTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/elina/Developer/HSE/Lab1_architecture/Eco.Lab1/Eco.Lab1/UnitTestFiles/SourceFiles/EcoLab1.c"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "420"
+                  endingLineNumber = "420"
+                  offsetFromSymbolStart = "692">
+               </Location>
+               <Location
+                  uuid = "CA19A704-C910-4270-BF0F-F8A0E4F8FC2B - 12c7c6169ecc5721"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EcoMain"
+                  moduleName = "Eco.Lab1UnitTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/elina/Developer/HSE/Lab1_architecture/Eco.Lab1/Eco.Lab1/UnitTestFiles/SourceFiles/EcoLab1.c"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "417"
+                  endingLineNumber = "417"
+                  offsetFromSymbolStart = "664">
+               </Location>
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
@@ -110,8 +140,8 @@
             filePath = "../../../UnitTestFiles/SourceFiles/EcoLab1.c"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "416"
-            endingLineNumber = "416"
+            startingLineNumber = "359"
+            endingLineNumber = "359"
             landmarkName = "EcoMain(pIUnk)"
             landmarkType = "9">
             <Locations>
@@ -145,53 +175,20 @@
                   endingLineNumber = "416"
                   offsetFromSymbolStart = "664">
                </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "A7E69C0A-B1FF-4E2F-85C3-CBC17CAF693B"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "../../../UnitTestFiles/SourceFiles/EcoLab1.c"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "303"
-            endingLineNumber = "303"
-            landmarkName = "testDoubleSort(pIEcoLab1, file, arrSize, pIMem)"
-            landmarkType = "9">
-            <Locations>
                <Location
-                  uuid = "A7E69C0A-B1FF-4E2F-85C3-CBC17CAF693B - f034e77632b8d321"
+                  uuid = "A6555854-5F72-45DE-ABAF-AE42F616AD22 - 12c7c6169ecc5721"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "testDoubleSort"
+                  symbolName = "EcoMain"
                   moduleName = "Eco.Lab1UnitTest"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/elina/Developer/HSE/Lab1_architecture/Eco.Lab1/Eco.Lab1/UnitTestFiles/SourceFiles/EcoLab1.c"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "303"
-                  endingLineNumber = "303"
-                  offsetFromSymbolStart = "96">
-               </Location>
-               <Location
-                  uuid = "A7E69C0A-B1FF-4E2F-85C3-CBC17CAF693B - f034e77632b8d363"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "testDoubleSort"
-                  moduleName = "Eco.Lab1UnitTest"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/elina/Developer/HSE/Lab1_architecture/Eco.Lab1/Eco.Lab1/UnitTestFiles/SourceFiles/EcoLab1.c"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "305"
-                  endingLineNumber = "305"
-                  offsetFromSymbolStart = "148">
+                  startingLineNumber = "417"
+                  endingLineNumber = "417"
+                  offsetFromSymbolStart = "664">
                </Location>
             </Locations>
          </BreakpointContent>
