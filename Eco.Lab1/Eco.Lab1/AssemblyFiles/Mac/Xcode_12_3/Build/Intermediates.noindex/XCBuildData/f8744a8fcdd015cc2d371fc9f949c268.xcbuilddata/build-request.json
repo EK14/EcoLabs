@@ -2,14 +2,14 @@
   "buildCommand" : {
     "command" : "build",
     "skipDependencies" : false,
-    "style" : "buildAndRun"
+    "style" : "buildOnly"
   },
   "configuredTargets" : [
     {
-      "guid" : "ac821501a52e043ddef73386f363050f09e58258245b5bced549ec97524d81c8"
+      "guid" : "463a901afdfa34a4aebd3b3db93bb12ff80e112ef09482526107d37c97059211"
     }
   ],
-  "containerPath" : "/Users/elina/Developer/HSE/Lab1_architecture/Eco.Lab1/Eco.Lab1/AssemblyFiles/Mac/Xcode_12_3/Eco.Lab1UnitTest.xcodeproj",
+  "containerPath" : "/Users/elina/Developer/HSE/Lab1_architecture/Eco.Lab1/Eco.Lab1/AssemblyFiles/Mac/Xcode_12_3/Eco.Lab1.xcodeproj",
   "continueBuildingAfterErrors" : false,
   "enableIndexBuildArena" : false,
   "hideShellScriptEnvironment" : false,
@@ -31,10 +31,10 @@
     "arenaInfo" : {
       "buildIntermediatesPath" : "/Users/elina/Developer/HSE/Lab1_architecture/Eco.Lab1/Eco.Lab1/AssemblyFiles/Mac/Xcode_12_3/Build/Intermediates.noindex",
       "buildProductsPath" : "/Users/elina/Developer/HSE/Lab1_architecture/Eco.Lab1/Eco.Lab1/BuildFiles/Mac/$(ARCHS_STANDARD)",
-      "derivedDataPath" : "/Users/elina/Desktop/Eco.Lab1 5/Eco.Lab1/BuildFiles",
-      "indexDataStoreFolderPath" : "/Users/elina/Desktop/Eco.Lab1 5/Eco.Lab1/BuildFiles/Eco.Lab1UnitTest-cxrzfjxjwomrmkektwtaqyytbstw/Index.noindex/DataStore",
+      "derivedDataPath" : "/Users/elina/Library/Developer/Xcode/DerivedData",
+      "indexDataStoreFolderPath" : "/Users/elina/Library/Developer/Xcode/DerivedData/Eco.Lab1-camuehernseulngnyptayncllqri/Index.noindex/DataStore",
       "indexEnableDataStore" : true,
-      "indexPCHPath" : "/Users/elina/Desktop/Eco.Lab1 5/Eco.Lab1/BuildFiles/Eco.Lab1UnitTest-cxrzfjxjwomrmkektwtaqyytbstw/Index.noindex/PrecompiledHeaders",
+      "indexPCHPath" : "/Users/elina/Library/Developer/Xcode/DerivedData/Eco.Lab1-camuehernseulngnyptayncllqri/Index.noindex/PrecompiledHeaders",
       "pchPath" : "/Users/elina/Developer/HSE/Lab1_architecture/Eco.Lab1/Eco.Lab1/AssemblyFiles/Mac/Xcode_12_3/Build/Intermediates.noindex/PrecompiledHeaders"
     },
     "configurationName" : "Debug",
