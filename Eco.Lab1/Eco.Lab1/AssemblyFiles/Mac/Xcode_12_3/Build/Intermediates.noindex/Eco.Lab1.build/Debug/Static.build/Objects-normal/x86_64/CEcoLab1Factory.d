@@ -10,4 +10,6 @@ dependencies: \
   /Users/elina/Desktop/Eco.Framework/Eco.MemoryManager1/SharedFiles/IdEcoMemoryManager1.h \
   /Users/elina/Desktop/Eco.Framework/Eco.MemoryManager1/SharedFiles/IEcoMemoryManager1.h \
   /Users/elina/Desktop/Eco.Framework/Eco.MemoryManager1/SharedFiles/IEcoMemoryAllocator1.h \
+  ../../../Components/SharedFiles/IEcoCalculatorY.h \
+  ../../../Components/SharedFiles/IEcoCalculatorX.h \
   /Users/elina/Developer/HSE/Lab1_architecture/Eco.Lab1/Eco.Lab1/HeaderFiles/CEcoLab1Factory.h

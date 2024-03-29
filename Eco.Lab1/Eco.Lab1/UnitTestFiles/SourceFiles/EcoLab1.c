@@ -24,6 +24,8 @@
 #include "IdEcoInterfaceBus1.h"
 #include "IdEcoFileSystemManagement1.h"
 #include "IdEcoLab1.h"
+#include "IEcoCalculatorY.h"
+#include "IEcoCalculatorX.h"
 
 void fillIntArray(int *arr, int arrSize) {
     for (size_t i = 0; i < arrSize; i ++) {
@@ -229,6 +231,8 @@ int16_t EcoMain(IEcoUnknown* pIUnk) {
     char_t* copyName = 0;
     /* Указатель на тестируемый интерфейс */
     IEcoLab1* pIEcoLab1 = 0;
+    IEcoCalculatorX* m_pIEcoCalculatorX = 0;
+    IEcoCalculatorY* m_pIEcoCalculatorY = 0;
 
     int arrSizes[9] = {10000, 20000, 25000, 30000, 35000, 40000, 45000, 50000, 100000};
 
@@ -278,17 +282,74 @@ int16_t EcoMain(IEcoUnknown* pIUnk) {
         /* Освобождение интерфейсов в случае ошибки */
         goto Release;
     }
-
-    FILE * resultFile;
-    srand(time(0));
-    resultFile = fopen("output.csv", "w");
-    fprintf(resultFile, "sort, type, size, time\n");
-    for (size_t i = 0; i < 9; i++) {
-        testIntSort(pIEcoLab1, resultFile, arrSizes[i], pIMem);
-        testDoubleSort(pIEcoLab1, resultFile, arrSizes[i], pIMem);
-        testFloatSort(pIEcoLab1, resultFile, arrSizes[i], pIMem);
-        testStringSort(pIEcoLab1, resultFile, arrSizes[i], pIMem);
+    
+    result = pIEcoLab1->pVTbl->QueryInterface(pIEcoLab1, &IID_IEcoCalculatorY, (void **) &m_pIEcoCalculatorY);
+    if (result != 0 || m_pIEcoCalculatorY == 0) {
+        goto Release;
     }
+
+        printf("IEcoCalculatorY test:\n");
+        printf("Multiplication test: 111 * 7 = %d\n", m_pIEcoCalculatorY->pVTbl->Multiplication(m_pIEcoCalculatorY, 111, 7));
+        printf("Division test: 777 / 7 = %d\n", m_pIEcoCalculatorY->pVTbl->Division(m_pIEcoCalculatorY, 777, 7));
+        m_pIEcoCalculatorY->pVTbl->Release(m_pIEcoCalculatorY);
+
+        result = pIEcoLab1->pVTbl->QueryInterface(pIEcoLab1, &IID_IEcoCalculatorX, (void **) &m_pIEcoCalculatorX);
+        if (result != 0 || m_pIEcoCalculatorX == 0) {
+            goto Release;
+        }
+
+        printf("IEcoCalculatorX test:\n");
+        printf("Addition test: 770 + 7 = %d\n", m_pIEcoCalculatorX->pVTbl->Addition(m_pIEcoCalculatorX, 770, 7));
+        printf("Subtraction test: 777 - 77 = %d\n", m_pIEcoCalculatorX->pVTbl->Subtraction(m_pIEcoCalculatorX, 777, 77));
+        m_pIEcoCalculatorX->pVTbl->Release(m_pIEcoCalculatorX);
+
+        printf("\nInterface test:\n");
+
+        result = pIEcoLab1->pVTbl->QueryInterface(pIEcoLab1, &IID_IEcoCalculatorX, (void **) &m_pIEcoCalculatorX);
+        if (result == 0) {
+            printf("Query IX from lab - ok\n");
+            m_pIEcoCalculatorX->pVTbl->Release(m_pIEcoCalculatorX);
+        }
+        result = pIEcoLab1->pVTbl->QueryInterface(pIEcoLab1, &IID_IEcoCalculatorY, (void **) &m_pIEcoCalculatorY);
+        if (result == 0) {
+            printf("Query IY from lab - ok\n");
+            m_pIEcoCalculatorY->pVTbl->Release(m_pIEcoCalculatorY);
+        }
+
+        result = m_pIEcoCalculatorX->pVTbl->QueryInterface(m_pIEcoCalculatorX, &IID_IEcoCalculatorX, (void **) &m_pIEcoCalculatorX);
+        if (result == 0) {
+            printf("Query IX from IX - ok\n");
+            m_pIEcoCalculatorX->pVTbl->Release(m_pIEcoCalculatorX);
+        }
+
+        result = m_pIEcoCalculatorY->pVTbl->QueryInterface(m_pIEcoCalculatorY, &IID_IEcoCalculatorY, (void **) &m_pIEcoCalculatorY);
+        if (result == 0) {
+            printf("Query IY from IY - ok\n");
+            m_pIEcoCalculatorY->pVTbl->Release(m_pIEcoCalculatorY);
+        }
+
+        result = m_pIEcoCalculatorX->pVTbl->QueryInterface(m_pIEcoCalculatorX, &IID_IEcoCalculatorY, (void **) &m_pIEcoCalculatorY);
+        if (result == 0) {
+            printf("Query IY from IX - ok\n");
+            m_pIEcoCalculatorY->pVTbl->Release(m_pIEcoCalculatorY);
+        }
+
+        result = m_pIEcoCalculatorY->pVTbl->QueryInterface(m_pIEcoCalculatorY, &IID_IEcoCalculatorX, (void **) &m_pIEcoCalculatorX);
+        if (result == 0) {
+            printf("Query IX from IY - ok\n");
+            m_pIEcoCalculatorX->pVTbl->Release(m_pIEcoCalculatorX);
+        }
+
+//    FILE * resultFile;
+//    srand(time(0));
+//    resultFile = fopen("output.csv", "w");
+//    fprintf(resultFile, "sort, type, size, time\n");
+//    for (size_t i = 0; i < 9; i++) {
+//        testIntSort(pIEcoLab1, resultFile, arrSizes[i], pIMem);
+//        testDoubleSort(pIEcoLab1, resultFile, arrSizes[i], pIMem);
+//        testFloatSort(pIEcoLab1, resultFile, arrSizes[i], pIMem);
+//        testStringSort(pIEcoLab1, resultFile, arrSizes[i], pIMem);
+//    }
 
     /* Освлбождение блока памяти */
     pIMem->pVTbl->Free(pIMem, name);

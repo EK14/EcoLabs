@@ -260,6 +260,7 @@
 					../../../../Eco.List1/SharedFiles,
 					../../../../Eco.String1/SharedFiles,
 					../../../../Eco.Log1/SharedFiles,
+					../../../Components/SharedFiles,
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"'../../../BuildFiles/Mac/$(ARCHS_STANDARD)/$(CONFIGURATION)'",
@@ -338,6 +339,7 @@
 					../../../../Eco.List1/SharedFiles,
 					../../../../Eco.String1/SharedFiles,
 					../../../../Eco.Log1/SharedFiles,
+					../../../Components/SharedFiles,
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"'../../../BuildFiles/Mac/$(ARCHS_STANDARD)/$(CONFIGURATION)'",
@@ -370,6 +372,7 @@
 					"$(ECO_FRAMEWORK)/Eco.Log1/SharedFiles",
 					"$(ECO_FRAMEWORK)/Eco.Tree1/SharedFiles",
 					"$(ECO_FRAMEWORK)/Eco.Visitor1/SharedFiles",
+					../../../Components/SharedFiles,
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"'../../../BuildFiles/Mac/$(ARCHS_STANDARD)/$(CONFIGURATION)'",
@@ -403,6 +406,7 @@
 					"$(ECO_FRAMEWORK)/Eco.Log1/SharedFiles",
 					"$(ECO_FRAMEWORK)/Eco.Tree1/SharedFiles",
 					"$(ECO_FRAMEWORK)/Eco.Visitor1/SharedFiles",
+					../../../Components/SharedFiles,
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"'../../../BuildFiles/Mac/$(ARCHS_STANDARD)/$(CONFIGURATION)'",

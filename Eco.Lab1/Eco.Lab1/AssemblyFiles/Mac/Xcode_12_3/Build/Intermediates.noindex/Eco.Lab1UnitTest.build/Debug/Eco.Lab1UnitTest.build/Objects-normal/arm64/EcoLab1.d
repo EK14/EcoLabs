@@ -19,4 +19,6 @@ dependencies: \
   /Users/elina/Desktop/Eco.Framework/Eco.FileSystemManagement1/SharedFiles/IEcoDriveManager1.h \
   /Users/elina/Desktop/Eco.Framework/Eco.FileSystemManagement1/SharedFiles/IEcoDriveInfo1.h \
   /Users/elina/Desktop/Eco.Framework/Eco.FileSystemManagement1/SharedFiles/IEcoFileSystemManagement1.h \
-  ../../../SharedFiles/IdEcoLab1.h ../../../SharedFiles/IEcoLab1.h
+  ../../../SharedFiles/IdEcoLab1.h ../../../SharedFiles/IEcoLab1.h \
+  ../../../Components/SharedFiles/IEcoCalculatorY.h \
+  ../../../Components/SharedFiles/IEcoCalculatorX.h

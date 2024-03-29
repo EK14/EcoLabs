@@ -1,4 +1,4 @@
-﻿/*
+/*
  * <кодировка символов>
  *   Cyrillic (UTF-8 with signature) - Codepage 65001
  * </кодировка символов>
@@ -23,12 +23,19 @@
 #include "IEcoLab1.h"
 #include "IEcoSystem1.h"
 #include "IdEcoMemoryManager1.h"
+#include "IEcoCalculatorY.h"
+#include "IEcoCalculatorX.h"
 
 typedef struct CEcoLab1 {
 
     /* Таблица функций интерфейса IEcoLab1 */
     IEcoLab1VTbl* m_pVTblIEcoLab1;
-
+    
+    /* Таблица функций интерфейса IEcoCalculatorX */
+    IEcoCalculatorXVTbl* m_pVTblIEcoCalculatorX;
+    
+    /* Таблица функций интерфейса IEcoCalculatorY* */
+    IEcoCalculatorYVTbl* m_pVTblIEcoCalculatorY;
 
     /* Счетчик ссылок */
     uint32_t m_cRef;
@@ -41,6 +48,15 @@ typedef struct CEcoLab1 {
 
     /* Данные экземпляра */
     char_t* m_Name;
+    
+    /* Указатель на интерфейс IEcoCalculatorX */
+    IEcoCalculatorX* m_pIEcoCalculatorX;
+    
+    /* Указатель на интерфейс IEcoCalculatorY */
+    IEcoCalculatorY* m_pIEcoCalculatorY;
+    
+    /* Ссылка на интерфейс IEcoUnknown внутреннего агрегируемого компонента B */
+    IEcoUnknown* m_pInnerUnknown;
 
 } CEcoLab1, *CEcoLab1Ptr;
 

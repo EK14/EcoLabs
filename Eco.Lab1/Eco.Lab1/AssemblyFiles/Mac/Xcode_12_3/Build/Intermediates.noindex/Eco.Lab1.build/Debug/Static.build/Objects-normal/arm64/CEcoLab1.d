@@ -11,4 +11,7 @@ dependencies: \
   /Users/elina/Developer/HSE/Lab1_architecture/Eco.Lab1/Eco.Lab1/SharedFiles/IEcoLab1.h \
   /Users/elina/Desktop/Eco.Framework/Eco.MemoryManager1/SharedFiles/IdEcoMemoryManager1.h \
   /Users/elina/Desktop/Eco.Framework/Eco.MemoryManager1/SharedFiles/IEcoMemoryManager1.h \
-  /Users/elina/Desktop/Eco.Framework/Eco.MemoryManager1/SharedFiles/IEcoMemoryAllocator1.h
+  /Users/elina/Desktop/Eco.Framework/Eco.MemoryManager1/SharedFiles/IEcoMemoryAllocator1.h \
+  ../../../Components/SharedFiles/IEcoCalculatorY.h \
+  ../../../Components/SharedFiles/IEcoCalculatorX.h \
+  ../../../Components/SharedFiles/IdEcoCalculatorA.h
