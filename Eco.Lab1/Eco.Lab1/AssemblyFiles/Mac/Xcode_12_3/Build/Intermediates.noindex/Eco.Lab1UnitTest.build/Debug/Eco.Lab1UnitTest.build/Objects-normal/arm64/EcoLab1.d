@@ -1,5 +1,5 @@
 dependencies: \
-  /Users/elina/Developer/HSE/Lab1_architecture/Eco.Lab1/Eco.Lab1/UnitTestFiles/SourceFiles/EcoLab1.c \
+  /Users/elina/Desktop/EcoLabs-master-1/Eco.Lab1/Eco.Lab1/UnitTestFiles/SourceFiles/EcoLab1.c \
   /Users/elina/Desktop/Eco.Framework/Eco.Core1/SharedFiles/IEcoSystem1.h \
   /Users/elina/Desktop/Eco.Framework/Eco.Core1/SharedFiles/IEcoBase1.h \
   /Users/elina/Desktop/Eco.Framework/Eco.Core1/SharedFiles/depend.h \
@@ -19,4 +19,11 @@ dependencies: \
   /Users/elina/Desktop/Eco.Framework/Eco.FileSystemManagement1/SharedFiles/IEcoDriveManager1.h \
   /Users/elina/Desktop/Eco.Framework/Eco.FileSystemManagement1/SharedFiles/IEcoDriveInfo1.h \
   /Users/elina/Desktop/Eco.Framework/Eco.FileSystemManagement1/SharedFiles/IEcoFileSystemManagement1.h \
-  ../../../SharedFiles/IdEcoLab1.h ../../../SharedFiles/IEcoLab1.h
+  ../../../SharedFiles/IdEcoLab1.h ../../../SharedFiles/IEcoLab1.h \
+  /Users/elina/Desktop/eco-lab1-master/SharedFiles/IEcoCalculatorY.h \
+  /Users/elina/Desktop/eco-lab1-master/SharedFiles/IEcoCalculatorX.h \
+  /Users/elina/Desktop/Eco.Framework/Eco.Core1/SharedFiles/IEcoConnectionPointContainer.h \
+  /Users/elina/Desktop/Eco.Framework/Eco.Core1/SharedFiles/IEcoEnumConnectionPoints.h \
+  /Users/elina/Desktop/Eco.Framework/Eco.Core1/SharedFiles/IEcoConnectionPoint.h \
+  /Users/elina/Desktop/eco-lab1-master/SharedFiles/IEcoLab1Events.h \
+  /Users/elina/Desktop/eco-lab1-master/UnitTestFiles/HeaderFiles/CEcoLab1Sink.h

@@ -1,2 +1,0 @@
-Target dependency graph (1 target)
-Target 'Static' in project 'Eco.Lab1' (no dependencies)

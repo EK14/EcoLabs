@@ -24,6 +24,13 @@
 #include "IdEcoInterfaceBus1.h"
 #include "IdEcoFileSystemManagement1.h"
 #include "IdEcoLab1.h"
+#include "IEcoCalculatorY.h"
+#include "IEcoCalculatorX.h"
+
+#include "IEcoConnectionPointContainer.h"
+#include "IEcoConnectionPoint.h"
+#include "IEcoLab1Events.h"
+#include "CEcoLab1Sink.h"
 
 void fillIntArray(int *arr, int arrSize) {
     for (size_t i = 0; i < arrSize; i ++) {
@@ -206,6 +213,14 @@ void testStringSort(IEcoLab1 *pIEcoLab1, FILE *file, int arrSize, IEcoMemoryAllo
     fprintf(file, "%s,%s,%d,%lf\n", "qsort", "string", arrSize, qsortDuration);
 }
 
+void testSort(IEcoLab1 *pIEcoLab1, int arrSize, IEcoMemoryAllocator1 *pIMem) {
+    int* arr;
+    arr = (int *) pIMem->pVTbl->Alloc(pIMem, arrSize * sizeof(int));
+    fillIntArray(arr, arrSize);
+    pIEcoLab1->pVTbl->qsort(pIEcoLab1, arr, arrSize, sizeof(int), compareInt);
+    pIMem->pVTbl->Free(pIMem, arr);
+}
+
 /*
  *
  * <сводка>
@@ -230,7 +245,17 @@ int16_t EcoMain(IEcoUnknown* pIUnk) {
     /* Указатель на тестируемый интерфейс */
     IEcoLab1* pIEcoLab1 = 0;
 
-    int arrSizes[9] = {10000, 20000, 25000, 30000, 35000, 40000, 45000, 50000, 100000};
+    IEcoConnectionPointContainer* pICPC = 0;
+    IEcoConnectionPoint* pICP = 0;
+    IEcoLab1Events* pIEcoLab1Sink = 0;
+    IEcoUnknown* pISinkUnk = 0;
+    uint32_t cAdvise = 0;
+
+    IEcoCalculatorX* pIX = 0;
+    IEcoCalculatorY* pIY = 0;
+    srand(time(0));
+
+    int arrSizes[5] = {10000, 50000, 100000, 150000, 200000};
 
 
     /* Проверка и создание системного интрефейса */
@@ -279,19 +304,59 @@ int16_t EcoMain(IEcoUnknown* pIUnk) {
         goto Release;
     }
 
-    FILE * resultFile;
-    srand(time(0));
-    resultFile = fopen("output.csv", "w");
-    fprintf(resultFile, "sort, type, size, time\n");
-    for (size_t i = 0; i < 9; i++) {
-        testIntSort(pIEcoLab1, resultFile, arrSizes[i], pIMem);
-        testDoubleSort(pIEcoLab1, resultFile, arrSizes[i], pIMem);
-        testFloatSort(pIEcoLab1, resultFile, arrSizes[i], pIMem);
-        testStringSort(pIEcoLab1, resultFile, arrSizes[i], pIMem);
+    printf("IEcoLab1 component\n");
+
+    result = pIEcoLab1->pVTbl->QueryInterface(pIEcoLab1, &IID_IEcoConnectionPointContainer, (void **)&pICPC);
+    if (result != 0 || pICPC == 0) {
+        /* Освобождение интерфейсов в случае ошибки */
+        goto Release;
     }
+
+    printf("IEcoConnectionPointContainer\n");
+
+    result = pICPC->pVTbl->FindConnectionPoint(pICPC, &IID_IEcoLab1Events, &pICP);
+    if (result != 0 || pICP == 0) {
+        /* Освобождение интерфейсов в случае ошибки */
+        goto Release;
+    }
+
+    /* Освобождение интерфейса */
+    pICPC->pVTbl->Release(pICPC);
+
+    printf("ConnectionPoint\n");
+
+    result = createCEcoLab1Sink(pIMem, (IEcoLab1Events**)&pIEcoLab1Sink);
+
+    if (pIEcoLab1Sink != 0) {
+        result = pIEcoLab1Sink->pVTbl->QueryInterface(pIEcoLab1Sink, &IID_IEcoUnknown,(void **)&pISinkUnk);
+        if (result != 0 || pISinkUnk == 0) {
+            /* Освобождение интерфейсов в случае ошибки */
+            goto Release;
+        }
+        /* Подключение */
+        result = pICP->pVTbl->Advise(pICP, pISinkUnk, &cAdvise);
+        /* Проверка */
+        if (result == 0 && cAdvise == 1) {
+            /* Сюда можно добавить код */
+        }
+        /* Освобождение интерфейса */
+        pISinkUnk->pVTbl->Release(pISinkUnk);
+    }
+
+    printf("Sink\n");
+
+    printf("Sort\n");
+    testSort(pIEcoLab1, 10, pIMem);
 
     /* Освлбождение блока памяти */
     pIMem->pVTbl->Free(pIMem, name);
+
+    if (pIEcoLab1Sink != 0) {
+        /* Отключение */
+        result = pICP->pVTbl->Unadvise(pICP, cAdvise);
+        pIEcoLab1Sink->pVTbl->Release(pIEcoLab1Sink);
+        pICP->pVTbl->Release(pICP);
+    }
 
 Release:
 
@@ -317,6 +382,5 @@ Release:
     }
 
     return result;
-    
 }
 

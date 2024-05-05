@@ -19,6 +19,7 @@
 		01C7122327F211DC00AE9906 /* lib00000000000000000000000042757331.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 01C7122227F211DC00AE9906 /* lib00000000000000000000000042757331.a */; };
 		01C7122527F211EF00AE9906 /* lib0000000000000000000000004D656D31.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 01C7122427F211EF00AE9906 /* lib0000000000000000000000004D656D31.a */; };
 		01C7122927F212F900AE9906 /* lib1F5DF16EE1BF43B999A434ED38FE8F3A.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 01C7122827F212F900AE9906 /* lib1F5DF16EE1BF43B999A434ED38FE8F3A.a */; };
+		C3098DB62BE827F500692D62 /* CEcoLab1Sink.c in Sources */ = {isa = PBXBuildFile; fileRef = C3098DB52BE827F500692D62 /* CEcoLab1Sink.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -48,6 +49,19 @@
 		01C7122227F211DC00AE9906 /* lib00000000000000000000000042757331.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = lib00000000000000000000000042757331.a; path = "../../../../Eco.InterfaceBus1/BuildFiles/Mac/arm64 x86_64/Debug/lib00000000000000000000000042757331.a"; sourceTree = "<group>"; };
 		01C7122427F211EF00AE9906 /* lib0000000000000000000000004D656D31.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = lib0000000000000000000000004D656D31.a; path = "../../../../Eco.MemoryManager1/BuildFiles/Mac/arm64 x86_64/Debug/lib0000000000000000000000004D656D31.a"; sourceTree = "<group>"; };
 		01C7122827F212F900AE9906 /* lib1F5DF16EE1BF43B999A434ED38FE8F3A.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = lib1F5DF16EE1BF43B999A434ED38FE8F3A.a; path = "../../../BuildFiles/Mac/arm64 x86_64/Debug/lib1F5DF16EE1BF43B999A434ED38FE8F3A.a"; sourceTree = "<group>"; };
+		C3098DB52BE827F500692D62 /* CEcoLab1Sink.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = CEcoLab1Sink.c; path = "../../../../../../eco-lab1-master/UnitTestFiles/SourceFiles/CEcoLab1Sink.c"; sourceTree = "<group>"; };
+		C3098DB72BE8287B00692D62 /* IEcoConnectionPoint.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = IEcoConnectionPoint.h; path = "../../../../../../eco-lab1-master/SharedFiles/IEcoConnectionPoint.h"; sourceTree = "<group>"; };
+		C3D81AE42BE7DA3C0053EF6B /* lib3A8E44677E82475CB4A3719ED8397E61.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = lib3A8E44677E82475CB4A3719ED8397E61.a; path = ../../../../../../lib3A8E44677E82475CB4A3719ED8397E61.a; sourceTree = "<group>"; };
+		C3D81AE52BE7DA420053EF6B /* lib872FEF1DE3314B87AD44D1E7C232C2F0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = lib872FEF1DE3314B87AD44D1E7C232C2F0.a; path = ../../../../../../lib872FEF1DE3314B87AD44D1E7C232C2F0.a; sourceTree = "<group>"; };
+		C3D81AE62BE7DA470053EF6B /* lib4828F6552E4540E78121EBD220DC360E.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = lib4828F6552E4540E78121EBD220DC360E.a; path = ../../../../../../lib4828F6552E4540E78121EBD220DC360E.a; sourceTree = "<group>"; };
+		C3D81AE72BE7DA4C0053EF6B /* libAE202E543CE54550899603BD70C62565.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAE202E543CE54550899603BD70C62565.a; path = ../../../../../../libAE202E543CE54550899603BD70C62565.a; sourceTree = "<group>"; };
+		C3D81AED2BE7DC9B0053EF6B /* EcoDemoDialog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = EcoDemoDialog.h; path = "../../../../../../eco-lab1-master/UnitTestFiles/HeaderFiles/EcoDemoDialog.h"; sourceTree = "<group>"; };
+		C3D81AEE2BE7DC9B0053EF6B /* GameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GameViewController.h; path = "../../../../../../eco-lab1-master/UnitTestFiles/HeaderFiles/GameViewController.h"; sourceTree = "<group>"; };
+		C3D81AEF2BE7DC9B0053EF6B /* CEcoLab1Sink.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CEcoLab1Sink.h; path = "../../../../../../eco-lab1-master/UnitTestFiles/HeaderFiles/CEcoLab1Sink.h"; sourceTree = "<group>"; };
+		C3D81AF02BE7DC9B0053EF6B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = "../../../../../../eco-lab1-master/UnitTestFiles/HeaderFiles/AppDelegate.h"; sourceTree = "<group>"; };
+		C3D81AF72BE7DD2F0053EF6B /* IEcoCalculatorX.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = IEcoCalculatorX.h; path = "../../../../../../eco-lab1-master/SharedFiles/IEcoCalculatorX.h"; sourceTree = "<group>"; };
+		C3D81AF82BE7DD390053EF6B /* IEcoCalculatorY.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = IEcoCalculatorY.h; path = "../../../../../../eco-lab1-master/SharedFiles/IEcoCalculatorY.h"; sourceTree = "<group>"; };
+		C3D81AF92BE7DDB10053EF6B /* IEcoLab1Events.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = IEcoLab1Events.h; path = "../../../../../../eco-lab1-master/SharedFiles/IEcoLab1Events.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +108,10 @@
 		01C7120027F20DF700AE9906 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C3D81AE72BE7DA4C0053EF6B /* libAE202E543CE54550899603BD70C62565.a */,
+				C3D81AE62BE7DA470053EF6B /* lib4828F6552E4540E78121EBD220DC360E.a */,
+				C3D81AE52BE7DA420053EF6B /* lib872FEF1DE3314B87AD44D1E7C232C2F0.a */,
+				C3D81AE42BE7DA3C0053EF6B /* lib3A8E44677E82475CB4A3719ED8397E61.a */,
 				01B2B6282B7C16F6008E228C /* lib4E7C20FEFAF341069B5C42497B462BBE.a */,
 				01B2B6262B7C15A0008E228C /* lib82F73722057E47F3A2931ED27087694D.a */,
 				01B2B6242B7C1565008E228C /* lib84CC0A7DBABD44EEBE749C9A8312D37E.a */,
@@ -113,6 +131,7 @@
 		01C7120927F20F7F00AE9906 /* Source Files */ = {
 			isa = PBXGroup;
 			children = (
+				C3098DB52BE827F500692D62 /* CEcoLab1Sink.c */,
 				01C7120D27F20FD800AE9906 /* EcoLab1.c */,
 			);
 			name = "Source Files";
@@ -128,6 +147,14 @@
 		01C7120B27F20F9400AE9906 /* Header Files */ = {
 			isa = PBXGroup;
 			children = (
+				C3D81AF02BE7DC9B0053EF6B /* AppDelegate.h */,
+				C3D81AEF2BE7DC9B0053EF6B /* CEcoLab1Sink.h */,
+				C3D81AED2BE7DC9B0053EF6B /* EcoDemoDialog.h */,
+				C3D81AF82BE7DD390053EF6B /* IEcoCalculatorY.h */,
+				C3098DB72BE8287B00692D62 /* IEcoConnectionPoint.h */,
+				C3D81AF92BE7DDB10053EF6B /* IEcoLab1Events.h */,
+				C3D81AF72BE7DD2F0053EF6B /* IEcoCalculatorX.h */,
+				C3D81AEE2BE7DC9B0053EF6B /* GameViewController.h */,
 			);
 			name = "Header Files";
 			sourceTree = "<group>";
@@ -188,6 +215,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3098DB62BE827F500692D62 /* CEcoLab1Sink.c in Sources */,
 				01C7120F27F20FD800AE9906 /* EcoLab1.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -370,6 +398,8 @@
 					"$(ECO_FRAMEWORK)/Eco.Log1/SharedFiles",
 					"$(ECO_FRAMEWORK)/Eco.Tree1/SharedFiles",
 					"$(ECO_FRAMEWORK)/Eco.Visitor1/SharedFiles",
+					"$(ECO_FRAMEWORK)/Eco.Libraries",
+					"$(ECO_FRAMEWORK)/Eco.List1/SharedFiles",
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"'../../../BuildFiles/Mac/$(ARCHS_STANDARD)/$(CONFIGURATION)'",
@@ -381,6 +411,8 @@
 					"'$(ECO_FRAMEWORK)/Eco.List1/BuildFiles/Mac/$(ARCHS_STANDARD)/StaticRelease'",
 					"'$(ECO_FRAMEWORK)/Eco.Tree1/BuildFiles/Mac/$(ARCHS_STANDARD)/StaticRelease'",
 					"'$(ECO_FRAMEWORK)/Eco.Visitor1/BuildFiles/Mac/$(ARCHS_STANDARD)/StaticRelease'",
+					"'$(ECO_FRAMEWORK)/Eco.Libraries'",
+					"'$(ECO_FRAMEWORK)/Eco.List1/BuildFiles/Mac/$(ARCHS_STANDARD)/StaticRelease'",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -403,6 +435,8 @@
 					"$(ECO_FRAMEWORK)/Eco.Log1/SharedFiles",
 					"$(ECO_FRAMEWORK)/Eco.Tree1/SharedFiles",
 					"$(ECO_FRAMEWORK)/Eco.Visitor1/SharedFiles",
+					"$(ECO_FRAMEWORK)/Eco.Libraries",
+					"$(ECO_FRAMEWORK)/Eco.List1/SharedFiles",
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"'../../../BuildFiles/Mac/$(ARCHS_STANDARD)/$(CONFIGURATION)'",
@@ -414,6 +448,8 @@
 					"'$(ECO_FRAMEWORK)/Eco.List1/BuildFiles/Mac/$(ARCHS_STANDARD)/StaticRelease'",
 					"'$(ECO_FRAMEWORK)/Eco.Tree1/BuildFiles/Mac/$(ARCHS_STANDARD)/StaticRelease'",
 					"'$(ECO_FRAMEWORK)/Eco.Visitor1/BuildFiles/Mac/$(ARCHS_STANDARD)/StaticRelease'",
+					"'$(ECO_FRAMEWORK)/Eco.Libraries'",
+					"'$(ECO_FRAMEWORK)/Eco.List1/BuildFiles/Mac/$(ARCHS_STANDARD)/StaticRelease'",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
