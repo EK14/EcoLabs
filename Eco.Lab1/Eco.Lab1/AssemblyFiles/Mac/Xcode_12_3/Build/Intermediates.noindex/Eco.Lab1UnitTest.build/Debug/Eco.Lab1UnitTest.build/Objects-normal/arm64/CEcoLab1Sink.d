@@ -11,6 +11,6 @@ dependencies: \
   /Users/elina/Desktop/Eco.Framework/Eco.MemoryManager1/SharedFiles/IdEcoMemoryManager1.h \
   /Users/elina/Desktop/Eco.Framework/Eco.MemoryManager1/SharedFiles/IEcoMemoryManager1.h \
   /Users/elina/Desktop/Eco.Framework/Eco.MemoryManager1/SharedFiles/IEcoMemoryAllocator1.h \
-  /Users/elina/Desktop/Eco.Framework/Eco.Core1/SharedFiles/IEcoConnectionPointContainer.h \
-  /Users/elina/Desktop/Eco.Framework/Eco.Core1/SharedFiles/IEcoEnumConnectionPoints.h \
-  /Users/elina/Desktop/Eco.Framework/Eco.Core1/SharedFiles/IEcoConnectionPoint.h
+  ../../../SharedFiles/IEcoConnectionPointContainer.h \
+  ../../../SharedFiles/IEcoEnumConnectionPoints.h \
+  ../../../SharedFiles/IEcoConnectionPoint.h

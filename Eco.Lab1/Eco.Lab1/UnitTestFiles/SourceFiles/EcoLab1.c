@@ -19,18 +19,7 @@
 
 
 /* Eco OS */
-#include "IEcoSystem1.h"
-#include "IdEcoMemoryManager1.h"
-#include "IdEcoInterfaceBus1.h"
-#include "IdEcoFileSystemManagement1.h"
-#include "IdEcoLab1.h"
-#include "IEcoCalculatorY.h"
-#include "IEcoCalculatorX.h"
-
-#include "IEcoConnectionPointContainer.h"
-#include "IEcoConnectionPoint.h"
-#include "IEcoLab1Events.h"
-#include "CEcoLab1Sink.h"
+#include "EcoLab1.h"
 
 void fillIntArray(int *arr, int arrSize) {
     for (size_t i = 0; i < arrSize; i ++) {

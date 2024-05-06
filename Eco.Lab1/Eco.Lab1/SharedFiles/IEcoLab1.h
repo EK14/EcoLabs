@@ -1,4 +1,4 @@
-/*
+﻿/*
  * <кодировка символов>
  *   Cyrillic (UTF-8 with signature) - Codepage 65001
  * </кодировка символов>
@@ -39,11 +39,7 @@ typedef struct IEcoLab1VTbl {
     uint32_t (ECOCALLMETHOD *Release)(/* in */ struct IEcoLab1* me);
 
     /* IEcoLab1 */
-    int16_t (ECOCALLMETHOD *qsort)(struct IEcoLab1* me,
-                                   void* pData,
-                                   size_t elem_count,
-                                   size_t elem_size,
-                                   int (__cdecl *compare)(const void *, const void*));
+    int16_t (ECOCALLMETHOD *qsort)(/* in */ struct IEcoLab1* me, void *arrPrt, size_t size, size_t elemSize, int (__cdecl *compare)(const void *, const void *));
 
 } IEcoLab1VTbl, *IEcoLab1VTblPtr;
 

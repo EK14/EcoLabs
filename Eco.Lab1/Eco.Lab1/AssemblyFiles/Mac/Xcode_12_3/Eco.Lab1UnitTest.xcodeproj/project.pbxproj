@@ -51,6 +51,7 @@
 		01C7122827F212F900AE9906 /* lib1F5DF16EE1BF43B999A434ED38FE8F3A.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = lib1F5DF16EE1BF43B999A434ED38FE8F3A.a; path = "../../../BuildFiles/Mac/arm64 x86_64/Debug/lib1F5DF16EE1BF43B999A434ED38FE8F3A.a"; sourceTree = "<group>"; };
 		C3098DB52BE827F500692D62 /* CEcoLab1Sink.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = CEcoLab1Sink.c; path = "../../../../../../eco-lab1-master/UnitTestFiles/SourceFiles/CEcoLab1Sink.c"; sourceTree = "<group>"; };
 		C3098DB72BE8287B00692D62 /* IEcoConnectionPoint.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = IEcoConnectionPoint.h; path = "../../../../../../eco-lab1-master/SharedFiles/IEcoConnectionPoint.h"; sourceTree = "<group>"; };
+		C3098DE82BE83ECE00692D62 /* EcoLab1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EcoLab1.h; sourceTree = "<group>"; };
 		C3D81AE42BE7DA3C0053EF6B /* lib3A8E44677E82475CB4A3719ED8397E61.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = lib3A8E44677E82475CB4A3719ED8397E61.a; path = ../../../../../../lib3A8E44677E82475CB4A3719ED8397E61.a; sourceTree = "<group>"; };
 		C3D81AE52BE7DA420053EF6B /* lib872FEF1DE3314B87AD44D1E7C232C2F0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = lib872FEF1DE3314B87AD44D1E7C232C2F0.a; path = ../../../../../../lib872FEF1DE3314B87AD44D1E7C232C2F0.a; sourceTree = "<group>"; };
 		C3D81AE62BE7DA470053EF6B /* lib4828F6552E4540E78121EBD220DC360E.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = lib4828F6552E4540E78121EBD220DC360E.a; path = ../../../../../../lib4828F6552E4540E78121EBD220DC360E.a; sourceTree = "<group>"; };
@@ -155,6 +156,7 @@
 				C3D81AF92BE7DDB10053EF6B /* IEcoLab1Events.h */,
 				C3D81AF72BE7DD2F0053EF6B /* IEcoCalculatorX.h */,
 				C3D81AEE2BE7DC9B0053EF6B /* GameViewController.h */,
+				C3098DE82BE83ECE00692D62 /* EcoLab1.h */,
 			);
 			name = "Header Files";
 			sourceTree = "<group>";
@@ -189,6 +191,7 @@
 				TargetAttributes = {
 					01C711F427F20D7900AE9906 = {
 						CreatedOnToolsVersion = 12.3;
+						LastSwiftMigration = 1520;
 					};
 				};
 			};
@@ -384,6 +387,7 @@
 		01C711FD27F20D7900AE9906 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				HEADER_SEARCH_PATHS = (
 					../../../HeaderFiles,
@@ -415,12 +419,16 @@
 					"'$(ECO_FRAMEWORK)/Eco.List1/BuildFiles/Mac/$(ARCHS_STANDARD)/StaticRelease'",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Eco.Lab1UnitTest-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
 		01C711FE27F20D7900AE9906 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				HEADER_SEARCH_PATHS = (
 					../../../HeaderFiles,
@@ -452,6 +460,8 @@
 					"'$(ECO_FRAMEWORK)/Eco.List1/BuildFiles/Mac/$(ARCHS_STANDARD)/StaticRelease'",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Eco.Lab1UnitTest-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};

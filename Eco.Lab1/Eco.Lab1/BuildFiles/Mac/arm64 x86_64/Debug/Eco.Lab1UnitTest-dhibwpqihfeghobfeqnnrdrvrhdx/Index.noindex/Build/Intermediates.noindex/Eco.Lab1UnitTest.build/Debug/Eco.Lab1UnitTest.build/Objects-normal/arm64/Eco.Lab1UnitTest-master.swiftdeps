@@ -1,0 +1,6 @@
+version: "Apple Swift version 5.9.2 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)"
+options: "52434a5261f5ee440da1a853f349b66201329114924689b4ad90b2c4ff8641a6"
+build_start_time: [1714951091, 525625000]
+build_end_time: [1714951091, 527488000]
+inputs:
+  "/Users/elina/Desktop/EcoLabs-master-1/Eco.Lab1/Eco.Lab1/AssemblyFiles/Mac/Xcode_12_3/SwiftUIView.swift": !dirty [1714951091, 424612541]

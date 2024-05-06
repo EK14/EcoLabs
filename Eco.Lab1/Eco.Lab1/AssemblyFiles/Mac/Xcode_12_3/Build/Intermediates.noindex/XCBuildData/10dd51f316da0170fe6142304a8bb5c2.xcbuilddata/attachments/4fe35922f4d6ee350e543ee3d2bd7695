@@ -1,0 +1,18 @@
+{
+  "" : {
+    "diagnostics" : "/Users/elina/Desktop/EcoLabs-master-1/Eco.Lab1/Eco.Lab1/AssemblyFiles/Mac/Xcode_12_3/Build/Intermediates.noindex/Eco.Lab1UnitTest.build/Debug/Eco.Lab1UnitTest.build/Objects-normal/arm64/Eco.Lab1UnitTest-master.dia",
+    "emit-module-dependencies" : "/Users/elina/Desktop/EcoLabs-master-1/Eco.Lab1/Eco.Lab1/AssemblyFiles/Mac/Xcode_12_3/Build/Intermediates.noindex/Eco.Lab1UnitTest.build/Debug/Eco.Lab1UnitTest.build/Objects-normal/arm64/Eco.Lab1UnitTest-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/elina/Desktop/EcoLabs-master-1/Eco.Lab1/Eco.Lab1/AssemblyFiles/Mac/Xcode_12_3/Build/Intermediates.noindex/Eco.Lab1UnitTest.build/Debug/Eco.Lab1UnitTest.build/Objects-normal/arm64/Eco.Lab1UnitTest-master-emit-module.dia",
+    "swift-dependencies" : "/Users/elina/Desktop/EcoLabs-master-1/Eco.Lab1/Eco.Lab1/AssemblyFiles/Mac/Xcode_12_3/Build/Intermediates.noindex/Eco.Lab1UnitTest.build/Debug/Eco.Lab1UnitTest.build/Objects-normal/arm64/Eco.Lab1UnitTest-master.swiftdeps"
+  },
+  "/Users/elina/Desktop/EcoLabs-master-1/Eco.Lab1/Eco.Lab1/AssemblyFiles/Mac/Xcode_12_3/SwiftUIView.swift" : {
+    "const-values" : "/Users/elina/Desktop/EcoLabs-master-1/Eco.Lab1/Eco.Lab1/AssemblyFiles/Mac/Xcode_12_3/Build/Intermediates.noindex/Eco.Lab1UnitTest.build/Debug/Eco.Lab1UnitTest.build/Objects-normal/arm64/SwiftUIView.swiftconstvalues",
+    "dependencies" : "/Users/elina/Desktop/EcoLabs-master-1/Eco.Lab1/Eco.Lab1/AssemblyFiles/Mac/Xcode_12_3/Build/Intermediates.noindex/Eco.Lab1UnitTest.build/Debug/Eco.Lab1UnitTest.build/Objects-normal/arm64/SwiftUIView.d",
+    "diagnostics" : "/Users/elina/Desktop/EcoLabs-master-1/Eco.Lab1/Eco.Lab1/AssemblyFiles/Mac/Xcode_12_3/Build/Intermediates.noindex/Eco.Lab1UnitTest.build/Debug/Eco.Lab1UnitTest.build/Objects-normal/arm64/SwiftUIView.dia",
+    "index-unit-output-path" : "/Eco.Lab1UnitTest.build/Debug/Eco.Lab1UnitTest.build/Objects-normal/arm64/SwiftUIView.o",
+    "llvm-bc" : "/Users/elina/Desktop/EcoLabs-master-1/Eco.Lab1/Eco.Lab1/AssemblyFiles/Mac/Xcode_12_3/Build/Intermediates.noindex/Eco.Lab1UnitTest.build/Debug/Eco.Lab1UnitTest.build/Objects-normal/arm64/SwiftUIView.bc",
+    "object" : "/Users/elina/Desktop/EcoLabs-master-1/Eco.Lab1/Eco.Lab1/AssemblyFiles/Mac/Xcode_12_3/Build/Intermediates.noindex/Eco.Lab1UnitTest.build/Debug/Eco.Lab1UnitTest.build/Objects-normal/arm64/SwiftUIView.o",
+    "swift-dependencies" : "/Users/elina/Desktop/EcoLabs-master-1/Eco.Lab1/Eco.Lab1/AssemblyFiles/Mac/Xcode_12_3/Build/Intermediates.noindex/Eco.Lab1UnitTest.build/Debug/Eco.Lab1UnitTest.build/Objects-normal/arm64/SwiftUIView.swiftdeps",
+    "swiftmodule" : "/Users/elina/Desktop/EcoLabs-master-1/Eco.Lab1/Eco.Lab1/AssemblyFiles/Mac/Xcode_12_3/Build/Intermediates.noindex/Eco.Lab1UnitTest.build/Debug/Eco.Lab1UnitTest.build/Objects-normal/arm64/SwiftUIView~partial.swiftmodule"
+  }
+}
