@@ -27,5 +27,5 @@ dependencies: \
   ../../../SharedFiles/IEcoEnumConnectionPoints.h \
   ../../../SharedFiles/IEcoConnectionPoint.h \
   /Users/elina/Desktop/eco-lab1-master/SharedFiles/IEcoConnectionPoint.h \
-  /Users/elina/Desktop/eco-lab1-master/SharedFiles/IEcoLab1Events.h \
+  ../../../SharedFiles/IEcoLab1Events.h \
   /Users/elina/Desktop/eco-lab1-master/UnitTestFiles/HeaderFiles/CEcoLab1Sink.h

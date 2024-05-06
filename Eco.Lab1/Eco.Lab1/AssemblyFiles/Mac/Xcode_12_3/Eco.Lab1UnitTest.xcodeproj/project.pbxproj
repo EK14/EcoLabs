@@ -62,7 +62,6 @@
 		C3D81AF02BE7DC9B0053EF6B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = "../../../../../../eco-lab1-master/UnitTestFiles/HeaderFiles/AppDelegate.h"; sourceTree = "<group>"; };
 		C3D81AF72BE7DD2F0053EF6B /* IEcoCalculatorX.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = IEcoCalculatorX.h; path = "../../../../../../eco-lab1-master/SharedFiles/IEcoCalculatorX.h"; sourceTree = "<group>"; };
 		C3D81AF82BE7DD390053EF6B /* IEcoCalculatorY.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = IEcoCalculatorY.h; path = "../../../../../../eco-lab1-master/SharedFiles/IEcoCalculatorY.h"; sourceTree = "<group>"; };
-		C3D81AF92BE7DDB10053EF6B /* IEcoLab1Events.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = IEcoLab1Events.h; path = "../../../../../../eco-lab1-master/SharedFiles/IEcoLab1Events.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,7 +152,6 @@
 				C3D81AED2BE7DC9B0053EF6B /* EcoDemoDialog.h */,
 				C3D81AF82BE7DD390053EF6B /* IEcoCalculatorY.h */,
 				C3098DB72BE8287B00692D62 /* IEcoConnectionPoint.h */,
-				C3D81AF92BE7DDB10053EF6B /* IEcoLab1Events.h */,
 				C3D81AF72BE7DD2F0053EF6B /* IEcoCalculatorX.h */,
 				C3D81AEE2BE7DC9B0053EF6B /* GameViewController.h */,
 				C3098DE82BE83ECE00692D62 /* EcoLab1.h */,

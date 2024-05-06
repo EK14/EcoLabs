@@ -30,6 +30,7 @@
 #include "IEcoConnectionPointContainer.h"
 #include "IEcoLab1Events.h"
 
+int ind = 0;
 
 int IsEqualGUID(const UGUID* guid1, const UGUID* guid2) {
     return memcmp(guid1, guid2, sizeof(UGUID)) == 0;
@@ -86,14 +87,15 @@ int16_t ECOCALLMETHOD CEcoLab1_QueryInterface(/* in */ struct IEcoLab1* me, /* i
     return 0;
 }
 
-int16_t ECOCALLMETHOD CEcoLab1_Fire_OnMyCallback_ProcSort(/* in */ struct IEcoLab1* me, /* in */ char_t* Name, char *arr, size_t arrSize, size_t elemSize) {
+int16_t ECOCALLMETHOD CEcoLab1_Fire_OnMyCallback_ProcSort(/* in */ struct IEcoLab1* me, /* in */ char_t* Name, char *arr, size_t arrSize, size_t elemSize, int index) {
     CEcoLab1* pCMe = (CEcoLab1*)me;
     int16_t result = 0;
     uint32_t count = 0;
-    uint32_t index = 0;
     IEcoEnumConnections* pEnum = 0;
     IEcoLab1Events* pIEvents = 0;
     EcoConnectionData cd;
+    
+    ind++;
 
     if (me == 0 ) {
         return -1;
@@ -105,7 +107,7 @@ int16_t ECOCALLMETHOD CEcoLab1_Fire_OnMyCallback_ProcSort(/* in */ struct IEcoLa
             while (pEnum->pVTbl->Next(pEnum, 1, &cd, 0) == 0) {
                 result = cd.pUnk->pVTbl->QueryInterface(cd.pUnk, &IID_IEcoLab1Events, (void**)&pIEvents);
                 if ( (result == 0) && (pIEvents != 0) ) {
-                    result = pIEvents->pVTbl->OnMyCallback_ProcSort(me, Name, arr, arrSize, elemSize);
+                    result = pIEvents->pVTbl->OnMyCallback_ProcSort(me, Name, arr, arrSize, elemSize, index);
                     pIEvents->pVTbl->Release(pIEvents);
                 }
                 cd.pUnk->pVTbl->Release(cd.pUnk);
@@ -166,7 +168,7 @@ int16_t ECOCALLMETHOD CEcoLab1_Fire_OnMyCallback_StartSort(/* in */ struct IEcoL
             while (pEnum->pVTbl->Next(pEnum, 1, &cd, 0) == 0) {
                 result = cd.pUnk->pVTbl->QueryInterface(cd.pUnk, &IID_IEcoLab1Events, (void**)&pIEvents);
                 if ( (result == 0) && (pIEvents != 0) ) {
-                    result = pIEvents->pVTbl->OnMyCallback_StartSort(pIEvents, Name, arr, arrSize, elemSize, resultFile);
+                    result = pIEvents->pVTbl->OnMyCallback_StartSort(pIEvents, Name, arr, arrSize, elemSize);
                     pIEvents->pVTbl->Release(pIEvents);
                 }
                 cd.pUnk->pVTbl->Release(cd.pUnk);
@@ -376,10 +378,10 @@ struct Node* insert(struct CEcoLab1* pCMe, struct Node* node, char *key, size_t 
 
 // Функция для обхода дерева в порядке возрастания
 void inOrder(struct Node* root, char **arr, size_t elem_size, CEcoLab1* pCMe, size_t elem_count, struct IEcoLab1* me, char *array) {
-    CEcoLab1_Fire_OnMyCallback_ProcSort(me, pCMe->m_Name, array, elem_count, elem_size);
     if (root != NULL) {
         inOrder(root->left, arr, elem_size, pCMe, elem_count, me, array);
         copy_bytes(root->data, *arr, elem_size);
+        CEcoLab1_Fire_OnMyCallback_ProcSort(me, pCMe->m_Name, array, elem_count, elem_size, ind);
         *arr += elem_size;
         inOrder(root->right, arr, elem_size, pCMe, elem_count, me, array);
     }
@@ -402,7 +404,8 @@ void treeSort(struct CEcoLab1* pCMe, char *arr, size_t n, size_t elem_size, int 
     for (int i = 0; i < n; i++) {
         root = insert(pCMe, root, (char*)arr + i * elem_size, elem_size, comp);
     }
-
+    
+    int index = 0;
     // Обходим дерево в порядке возрастания и записываем отсортированные элементы обратно в массив
     inOrder(root, &arr, elem_size, pCMe, n, me, arr);
     

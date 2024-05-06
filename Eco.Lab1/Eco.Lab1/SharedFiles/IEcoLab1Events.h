@@ -1,4 +1,4 @@
-﻿/*
+/*
  * <кодировка символов>
  *   Cyrillic (UTF-8 with signature) - Codepage 65001
  * </кодировка символов>
@@ -43,7 +43,7 @@ typedef struct IEcoLab1VTblEvents {
 
     int16_t (ECOCALLMETHOD *OnMyCallback_StartSort)(/* in */ struct IEcoLab1* me, /* in */ char_t* Name, char *arr, size_t arrSize, size_t elemSize);
     int16_t (ECOCALLMETHOD *OnMyCallback_EndSort)(/* in */ struct IEcoLab1* me, /* in */ char_t* Name, char *arr, size_t arrSize, size_t elemSize);
-    int16_t (ECOCALLMETHOD *OnMyCallback_ProcSort)(/* in */ struct IEcoLab1* me, /* in */ char_t* Name, char *arr, size_t arrSize, size_t elemSize, size_t elem1, size_t elem2);
+    int16_t (ECOCALLMETHOD *OnMyCallback_ProcSort)(/* in */ struct IEcoLab1* me, /* in */ char_t* Name, char *arr, size_t arrSize, size_t elemSize, int index);
 
 } IEcoLab1VTblEvents, *IEcoLab1VTblEventsPtr;
 

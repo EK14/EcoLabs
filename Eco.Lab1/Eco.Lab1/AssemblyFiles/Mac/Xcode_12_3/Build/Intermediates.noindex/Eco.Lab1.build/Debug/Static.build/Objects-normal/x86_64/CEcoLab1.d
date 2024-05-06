@@ -26,4 +26,4 @@ dependencies: \
   /Users/elina/Desktop/eco-lab1-master/SharedFiles/IdEcoCalculatorA.h \
   /Users/elina/Desktop/eco-lab1-master/SharedFiles/IdEcoCalculatorB.h \
   /Users/elina/Desktop/eco-lab1-master/HeaderFiles/CEcoLab1EnumConnectionPoints.h \
-  /Users/elina/Desktop/eco-lab1-master/SharedFiles/IEcoLab1Events.h
+  ../../../SharedFiles/IEcoLab1Events.h

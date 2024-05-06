@@ -21,8 +21,6 @@
 		C3D81AAE2BE7D9940053EF6B /* IEcoConnectionPointContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = C3D81A9F2BE7D9930053EF6B /* IEcoConnectionPointContainer.h */; };
 		C3D81AAF2BE7D9940053EF6B /* IdEcoCalculatorB.h in Headers */ = {isa = PBXBuildFile; fileRef = C3D81AA02BE7D9930053EF6B /* IdEcoCalculatorB.h */; };
 		C3D81AB02BE7D9940053EF6B /* IdEcoCalculatorB.h in Headers */ = {isa = PBXBuildFile; fileRef = C3D81AA02BE7D9930053EF6B /* IdEcoCalculatorB.h */; };
-		C3D81AB12BE7D9940053EF6B /* IEcoLab1Events.h in Headers */ = {isa = PBXBuildFile; fileRef = C3D81AA12BE7D9930053EF6B /* IEcoLab1Events.h */; };
-		C3D81AB22BE7D9940053EF6B /* IEcoLab1Events.h in Headers */ = {isa = PBXBuildFile; fileRef = C3D81AA12BE7D9930053EF6B /* IEcoLab1Events.h */; };
 		C3D81AB32BE7D9940053EF6B /* IEcoEnumConnectionPoints.h in Headers */ = {isa = PBXBuildFile; fileRef = C3D81AA22BE7D9930053EF6B /* IEcoEnumConnectionPoints.h */; };
 		C3D81AB42BE7D9940053EF6B /* IEcoEnumConnectionPoints.h in Headers */ = {isa = PBXBuildFile; fileRef = C3D81AA22BE7D9930053EF6B /* IEcoEnumConnectionPoints.h */; };
 		C3D81AB52BE7D9940053EF6B /* IdEcoCalculatorE.h in Headers */ = {isa = PBXBuildFile; fileRef = C3D81AA32BE7D9930053EF6B /* IdEcoCalculatorE.h */; };
@@ -75,7 +73,6 @@
 		01138AE527F1BE4900734060 /* CEcoLab1.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = CEcoLab1.c; path = ../../../SourceFiles/CEcoLab1.c; sourceTree = "<group>"; };
 		C3D81A9F2BE7D9930053EF6B /* IEcoConnectionPointContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IEcoConnectionPointContainer.h; path = "../../../../../../eco-lab1-master/SharedFiles/IEcoConnectionPointContainer.h"; sourceTree = "<group>"; };
 		C3D81AA02BE7D9930053EF6B /* IdEcoCalculatorB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IdEcoCalculatorB.h; path = "../../../../../../eco-lab1-master/SharedFiles/IdEcoCalculatorB.h"; sourceTree = "<group>"; };
-		C3D81AA12BE7D9930053EF6B /* IEcoLab1Events.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IEcoLab1Events.h; path = "../../../../../../eco-lab1-master/SharedFiles/IEcoLab1Events.h"; sourceTree = "<group>"; };
 		C3D81AA22BE7D9930053EF6B /* IEcoEnumConnectionPoints.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IEcoEnumConnectionPoints.h; path = "../../../../../../eco-lab1-master/SharedFiles/IEcoEnumConnectionPoints.h"; sourceTree = "<group>"; };
 		C3D81AA32BE7D9930053EF6B /* IdEcoCalculatorE.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IdEcoCalculatorE.h; path = "../../../../../../eco-lab1-master/SharedFiles/IdEcoCalculatorE.h"; sourceTree = "<group>"; };
 		C3D81AA42BE7D9930053EF6B /* IdEcoCalculatorC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IdEcoCalculatorC.h; path = "../../../../../../eco-lab1-master/SharedFiles/IdEcoCalculatorC.h"; sourceTree = "<group>"; };
@@ -163,7 +160,6 @@
 				C3D81AA22BE7D9930053EF6B /* IEcoEnumConnectionPoints.h */,
 				C3D81AA62BE7D9930053EF6B /* IEcoEnumConnections.h */,
 				C3D81AA52BE7D9930053EF6B /* IEcoLab1.h */,
-				C3D81AA12BE7D9930053EF6B /* IEcoLab1Events.h */,
 				01138ADE27F1BE2C00734060 /* IdEcoLab1.h */,
 				01138ADD27F1BE2C00734060 /* IEcoLab1.h */,
 			);
@@ -210,7 +206,6 @@
 				C3D81ADE2BE7D9EE0053EF6B /* CEcoLab1ConnectionPoint.h in Headers */,
 				C3D81AB92BE7D9940053EF6B /* IEcoLab1.h in Headers */,
 				01138ADF27F1BE2C00734060 /* IEcoLab1.h in Headers */,
-				C3D81AB12BE7D9940053EF6B /* IEcoLab1Events.h in Headers */,
 				01138AD927F1BE1A00734060 /* CEcoLab1.h in Headers */,
 				C3D81AE02BE7D9EE0053EF6B /* CEcoLab1.h in Headers */,
 				C3D81ABB2BE7D9940053EF6B /* IEcoEnumConnections.h in Headers */,
@@ -240,7 +235,6 @@
 				C3D81ADF2BE7D9EE0053EF6B /* CEcoLab1ConnectionPoint.h in Headers */,
 				C3D81ABA2BE7D9940053EF6B /* IEcoLab1.h in Headers */,
 				01138AE027F1BE2C00734060 /* IEcoLab1.h in Headers */,
-				C3D81AB22BE7D9940053EF6B /* IEcoLab1Events.h in Headers */,
 				01138ADA27F1BE1A00734060 /* CEcoLab1.h in Headers */,
 				C3D81AE12BE7D9EE0053EF6B /* CEcoLab1.h in Headers */,
 				C3D81ABC2BE7D9940053EF6B /* IEcoEnumConnections.h in Headers */,
