@@ -433,6 +433,128 @@
 			<key>uniqueIdentifier</key>
 			<string>17CAAFC8-8E60-4A04-B977-3E10A0FDF7DD</string>
 		</dict>
+		<key>1BE70F82-80AB-4630-85F7-1BF7DB4D13B4</key>
+		<dict>
+			<key>auxiliaryLogUniqueIdentifier</key>
+			<string>A37CD565-B53F-4FA5-912A-4A774DF7B11D</string>
+			<key>auxiliaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>91</integer>
+			</dict>
+			<key>className</key>
+			<string>IDESchemeActionsInvocationRecord</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
+			<key>fileName</key>
+			<string>Run-Eco.Lab1UnitTest-2024.05.06_14-20-08-+0300.xcresult</string>
+			<key>hasAuxiliaryLog</key>
+			<true/>
+			<key>hasConsoleLog</key>
+			<true/>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>68</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Eco.Lab1UnitTest project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Eco.Lab1UnitTest</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run Eco.Lab1UnitTest</string>
+			<key>timeStartedRecording</key>
+			<real>736687208.75174606</real>
+			<key>timeStoppedRecording</key>
+			<real>0.0</real>
+			<key>title</key>
+			<string>Run Eco.Lab1UnitTest</string>
+			<key>uniqueIdentifier</key>
+			<string>1BE70F82-80AB-4630-85F7-1BF7DB4D13B4</string>
+		</dict>
+		<key>2124F94F-7CCF-43C9-9A34-6E13AF05C531</key>
+		<dict>
+			<key>auxiliaryLogUniqueIdentifier</key>
+			<string>E2B699CF-222B-42B0-8CD5-A751B9CA6F49</string>
+			<key>auxiliaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>91</integer>
+			</dict>
+			<key>className</key>
+			<string>IDESchemeActionsInvocationRecord</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
+			<key>fileName</key>
+			<string>Run-Eco.Lab1UnitTest-2024.05.06_14-18-18-+0300.xcresult</string>
+			<key>hasAuxiliaryLog</key>
+			<true/>
+			<key>hasConsoleLog</key>
+			<true/>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>68</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Eco.Lab1UnitTest project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Eco.Lab1UnitTest</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run Eco.Lab1UnitTest</string>
+			<key>timeStartedRecording</key>
+			<real>736687098.39546204</real>
+			<key>timeStoppedRecording</key>
+			<real>0.0</real>
+			<key>title</key>
+			<string>Run Eco.Lab1UnitTest</string>
+			<key>uniqueIdentifier</key>
+			<string>2124F94F-7CCF-43C9-9A34-6E13AF05C531</string>
+		</dict>
 		<key>2256CA63-658A-4363-BB3C-066322685352</key>
 		<dict>
 			<key>auxiliaryLogUniqueIdentifier</key>
@@ -615,6 +737,67 @@
 			<string>Run Eco.Lab1UnitTest</string>
 			<key>uniqueIdentifier</key>
 			<string>29A46459-0D82-4EEE-9E7C-A8E74347F353</string>
+		</dict>
+		<key>2A06C8A6-6F58-42D3-884A-63AC885C50C9</key>
+		<dict>
+			<key>auxiliaryLogUniqueIdentifier</key>
+			<string>67D4E355-02A7-4122-AAA6-99547BB041AB</string>
+			<key>auxiliaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>91</integer>
+			</dict>
+			<key>className</key>
+			<string>IDESchemeActionsInvocationRecord</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
+			<key>fileName</key>
+			<string>Run-Eco.Lab1UnitTest-2024.05.06_14-18-43-+0300.xcresult</string>
+			<key>hasAuxiliaryLog</key>
+			<true/>
+			<key>hasConsoleLog</key>
+			<true/>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>68</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Eco.Lab1UnitTest project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Eco.Lab1UnitTest</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run Eco.Lab1UnitTest</string>
+			<key>timeStartedRecording</key>
+			<real>736687123.27947497</real>
+			<key>timeStoppedRecording</key>
+			<real>0.0</real>
+			<key>title</key>
+			<string>Run Eco.Lab1UnitTest</string>
+			<key>uniqueIdentifier</key>
+			<string>2A06C8A6-6F58-42D3-884A-63AC885C50C9</string>
 		</dict>
 		<key>2BFDB3E5-84A2-4561-898E-23E9905753AF</key>
 		<dict>
@@ -1165,6 +1348,67 @@
 			<key>uniqueIdentifier</key>
 			<string>5E7A2C2A-94FC-4BB8-A988-E9CE7F32105C</string>
 		</dict>
+		<key>63744FDB-0CAD-4817-B602-30E4A43155B9</key>
+		<dict>
+			<key>auxiliaryLogUniqueIdentifier</key>
+			<string>9A172499-C898-4ADB-91A8-437148D34AE5</string>
+			<key>auxiliaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>91</integer>
+			</dict>
+			<key>className</key>
+			<string>IDESchemeActionsInvocationRecord</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
+			<key>fileName</key>
+			<string>Run-Eco.Lab1UnitTest-2024.05.06_14-20-01-+0300.xcresult</string>
+			<key>hasAuxiliaryLog</key>
+			<true/>
+			<key>hasConsoleLog</key>
+			<true/>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>68</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Eco.Lab1UnitTest project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Eco.Lab1UnitTest</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run Eco.Lab1UnitTest</string>
+			<key>timeStartedRecording</key>
+			<real>736687201.55403697</real>
+			<key>timeStoppedRecording</key>
+			<real>0.0</real>
+			<key>title</key>
+			<string>Run Eco.Lab1UnitTest</string>
+			<key>uniqueIdentifier</key>
+			<string>63744FDB-0CAD-4817-B602-30E4A43155B9</string>
+		</dict>
 		<key>688BC81E-AB33-4574-95DB-6DE59A7801B6</key>
 		<dict>
 			<key>auxiliaryLogUniqueIdentifier</key>
@@ -1348,6 +1592,67 @@
 			<key>uniqueIdentifier</key>
 			<string>726484CC-5D56-455E-A16A-55640AFA3978</string>
 		</dict>
+		<key>79AAFE74-1823-4908-92C7-9A177602BFA9</key>
+		<dict>
+			<key>auxiliaryLogUniqueIdentifier</key>
+			<string>8E327117-1EF3-4B63-AFEB-C122CFBB5485</string>
+			<key>auxiliaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>92</integer>
+			</dict>
+			<key>className</key>
+			<string>IDESchemeActionsInvocationRecord</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
+			<key>fileName</key>
+			<string>Run-Eco.Lab1UnitTest-2024.05.06_14-17-21-+0300.xcresult</string>
+			<key>hasAuxiliaryLog</key>
+			<true/>
+			<key>hasConsoleLog</key>
+			<true/>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>69</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Eco.Lab1UnitTest project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Eco.Lab1UnitTest</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run Eco.Lab1UnitTest</string>
+			<key>timeStartedRecording</key>
+			<real>736687041.15710199</real>
+			<key>timeStoppedRecording</key>
+			<real>0.0</real>
+			<key>title</key>
+			<string>Run Eco.Lab1UnitTest</string>
+			<key>uniqueIdentifier</key>
+			<string>79AAFE74-1823-4908-92C7-9A177602BFA9</string>
+		</dict>
 		<key>7F3F2824-0F5E-4D4A-BC23-0444D2582DBD</key>
 		<dict>
 			<key>auxiliaryLogUniqueIdentifier</key>
@@ -1530,6 +1835,128 @@
 			<string>Run Eco.Lab1UnitTest</string>
 			<key>uniqueIdentifier</key>
 			<string>8144D657-6ECE-417C-87BF-6527C21D028D</string>
+		</dict>
+		<key>83F658D7-602A-4113-956D-3D266C2096E1</key>
+		<dict>
+			<key>auxiliaryLogUniqueIdentifier</key>
+			<string>26B14219-7DF5-4EED-A8FD-27E23930D8AF</string>
+			<key>auxiliaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>91</integer>
+			</dict>
+			<key>className</key>
+			<string>IDESchemeActionsInvocationRecord</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
+			<key>fileName</key>
+			<string>Run-Eco.Lab1UnitTest-2024.05.06_14-19-05-+0300.xcresult</string>
+			<key>hasAuxiliaryLog</key>
+			<true/>
+			<key>hasConsoleLog</key>
+			<true/>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>68</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Eco.Lab1UnitTest project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Eco.Lab1UnitTest</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run Eco.Lab1UnitTest</string>
+			<key>timeStartedRecording</key>
+			<real>736687145.54800999</real>
+			<key>timeStoppedRecording</key>
+			<real>0.0</real>
+			<key>title</key>
+			<string>Run Eco.Lab1UnitTest</string>
+			<key>uniqueIdentifier</key>
+			<string>83F658D7-602A-4113-956D-3D266C2096E1</string>
+		</dict>
+		<key>8C0574CF-CCDC-40B9-A11C-D9EEC8D8F7BB</key>
+		<dict>
+			<key>auxiliaryLogUniqueIdentifier</key>
+			<string>B6706421-863B-4B7D-A415-DBD99B09BB65</string>
+			<key>auxiliaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>91</integer>
+			</dict>
+			<key>className</key>
+			<string>IDESchemeActionsInvocationRecord</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
+			<key>fileName</key>
+			<string>Run-Eco.Lab1UnitTest-2024.05.06_14-19-28-+0300.xcresult</string>
+			<key>hasAuxiliaryLog</key>
+			<true/>
+			<key>hasConsoleLog</key>
+			<true/>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>68</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Eco.Lab1UnitTest project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Eco.Lab1UnitTest</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run Eco.Lab1UnitTest</string>
+			<key>timeStartedRecording</key>
+			<real>736687168.40414095</real>
+			<key>timeStoppedRecording</key>
+			<real>0.0</real>
+			<key>title</key>
+			<string>Run Eco.Lab1UnitTest</string>
+			<key>uniqueIdentifier</key>
+			<string>8C0574CF-CCDC-40B9-A11C-D9EEC8D8F7BB</string>
 		</dict>
 		<key>9B6A81EE-680A-43F8-A3FA-E6A05A050F35</key>
 		<dict>
@@ -1957,6 +2384,67 @@
 			<string>Run Eco.Lab1UnitTest</string>
 			<key>uniqueIdentifier</key>
 			<string>BC9C0913-E6E0-47F1-A4A9-91DFD55297B2</string>
+		</dict>
+		<key>BD63D276-7DFC-4529-B78A-8A65294D58AA</key>
+		<dict>
+			<key>auxiliaryLogUniqueIdentifier</key>
+			<string>A4F97644-3191-43EE-9CF7-1E8E807C4461</string>
+			<key>auxiliaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>91</integer>
+			</dict>
+			<key>className</key>
+			<string>IDESchemeActionsInvocationRecord</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
+			<key>fileName</key>
+			<string>Run-Eco.Lab1UnitTest-2024.05.06_14-17-40-+0300.xcresult</string>
+			<key>hasAuxiliaryLog</key>
+			<true/>
+			<key>hasConsoleLog</key>
+			<true/>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>68</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Eco.Lab1UnitTest project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Eco.Lab1UnitTest</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run Eco.Lab1UnitTest</string>
+			<key>timeStartedRecording</key>
+			<real>736687060.63962996</real>
+			<key>timeStoppedRecording</key>
+			<real>0.0</real>
+			<key>title</key>
+			<string>Run Eco.Lab1UnitTest</string>
+			<key>uniqueIdentifier</key>
+			<string>BD63D276-7DFC-4529-B78A-8A65294D58AA</string>
 		</dict>
 		<key>C5E94566-803F-4DE6-960E-71D96D724213</key>
 		<dict>

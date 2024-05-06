@@ -174,6 +174,48 @@
 			<key>uniqueIdentifier</key>
 			<string>1D30063A-F129-4DDB-AB5A-C69BDF65A95A</string>
 		</dict>
+		<key>26B14219-7DF5-4EED-A8FD-27E23930D8AF</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>26B14219-7DF5-4EED-A8FD-27E23930D8AF.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>91</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Eco.Lab1UnitTest project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Eco.Lab1UnitTest</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Eco.Lab1UnitTest</string>
+			<key>timeStartedRecording</key>
+			<real>736687145.54816997</real>
+			<key>timeStoppedRecording</key>
+			<real>736687145.842417</real>
+			<key>title</key>
+			<string>Build Eco.Lab1UnitTest</string>
+			<key>uniqueIdentifier</key>
+			<string>26B14219-7DF5-4EED-A8FD-27E23930D8AF</string>
+		</dict>
 		<key>26E84411-65E9-4487-9B63-55F74842DE7A</key>
 		<dict>
 			<key>className</key>
@@ -888,6 +930,48 @@
 			<key>uniqueIdentifier</key>
 			<string>61177C48-8823-43C4-A7CE-D74C8EF249FE</string>
 		</dict>
+		<key>67D4E355-02A7-4122-AAA6-99547BB041AB</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>67D4E355-02A7-4122-AAA6-99547BB041AB.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>91</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Eco.Lab1UnitTest project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Eco.Lab1UnitTest</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Eco.Lab1UnitTest</string>
+			<key>timeStartedRecording</key>
+			<real>736687123.27973294</real>
+			<key>timeStoppedRecording</key>
+			<real>736687123.48682702</real>
+			<key>title</key>
+			<string>Build Eco.Lab1UnitTest</string>
+			<key>uniqueIdentifier</key>
+			<string>67D4E355-02A7-4122-AAA6-99547BB041AB</string>
+		</dict>
 		<key>6D327F8D-5FAD-4346-9B0F-3006A948E144</key>
 		<dict>
 			<key>className</key>
@@ -1140,6 +1224,48 @@
 			<key>uniqueIdentifier</key>
 			<string>822C9521-DAED-4D48-9933-11BE2D0127D5</string>
 		</dict>
+		<key>8E327117-1EF3-4B63-AFEB-C122CFBB5485</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>8E327117-1EF3-4B63-AFEB-C122CFBB5485.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>92</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Eco.Lab1UnitTest project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Eco.Lab1UnitTest</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Eco.Lab1UnitTest</string>
+			<key>timeStartedRecording</key>
+			<real>736687041.15727794</real>
+			<key>timeStoppedRecording</key>
+			<real>736687041.63945997</real>
+			<key>title</key>
+			<string>Build Eco.Lab1UnitTest</string>
+			<key>uniqueIdentifier</key>
+			<string>8E327117-1EF3-4B63-AFEB-C122CFBB5485</string>
+		</dict>
 		<key>8E5CE6F5-F678-4F5E-8D64-F86437D418B9</key>
 		<dict>
 			<key>className</key>
@@ -1181,6 +1307,48 @@
 			<string>Build Eco.Lab1UnitTest</string>
 			<key>uniqueIdentifier</key>
 			<string>8E5CE6F5-F678-4F5E-8D64-F86437D418B9</string>
+		</dict>
+		<key>9A172499-C898-4ADB-91A8-437148D34AE5</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>9A172499-C898-4ADB-91A8-437148D34AE5.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>91</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Eco.Lab1UnitTest project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Eco.Lab1UnitTest</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Eco.Lab1UnitTest</string>
+			<key>timeStartedRecording</key>
+			<real>736687201.55417705</real>
+			<key>timeStoppedRecording</key>
+			<real>736687201.78688705</real>
+			<key>title</key>
+			<string>Build Eco.Lab1UnitTest</string>
+			<key>uniqueIdentifier</key>
+			<string>9A172499-C898-4ADB-91A8-437148D34AE5</string>
 		</dict>
 		<key>9C6B7E10-2AD3-4647-BB53-252CC475F84C</key>
 		<dict>
@@ -1307,6 +1475,90 @@
 			<string>Build Eco.Lab1UnitTest</string>
 			<key>uniqueIdentifier</key>
 			<string>9F4DC456-4F2A-477D-BEC5-20CD19F5EF2D</string>
+		</dict>
+		<key>A37CD565-B53F-4FA5-912A-4A774DF7B11D</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>A37CD565-B53F-4FA5-912A-4A774DF7B11D.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>91</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Eco.Lab1UnitTest project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Eco.Lab1UnitTest</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Eco.Lab1UnitTest</string>
+			<key>timeStartedRecording</key>
+			<real>736687208.75192297</real>
+			<key>timeStoppedRecording</key>
+			<real>736687208.86861205</real>
+			<key>title</key>
+			<string>Build Eco.Lab1UnitTest</string>
+			<key>uniqueIdentifier</key>
+			<string>A37CD565-B53F-4FA5-912A-4A774DF7B11D</string>
+		</dict>
+		<key>A4F97644-3191-43EE-9CF7-1E8E807C4461</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>A4F97644-3191-43EE-9CF7-1E8E807C4461.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>91</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Eco.Lab1UnitTest project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Eco.Lab1UnitTest</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Eco.Lab1UnitTest</string>
+			<key>timeStartedRecording</key>
+			<real>736687060.63978195</real>
+			<key>timeStoppedRecording</key>
+			<real>736687060.86287105</real>
+			<key>title</key>
+			<string>Build Eco.Lab1UnitTest</string>
+			<key>uniqueIdentifier</key>
+			<string>A4F97644-3191-43EE-9CF7-1E8E807C4461</string>
 		</dict>
 		<key>A67F267E-87B7-4EC3-9530-AF2D86FC5DE5</key>
 		<dict>
@@ -1475,6 +1727,48 @@
 			<string>Build Eco.Lab1UnitTest</string>
 			<key>uniqueIdentifier</key>
 			<string>AE63B4A1-DFBE-4FF7-A9D0-B7FC6CDF3EB6</string>
+		</dict>
+		<key>B6706421-863B-4B7D-A415-DBD99B09BB65</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>B6706421-863B-4B7D-A415-DBD99B09BB65.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>91</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Eco.Lab1UnitTest project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Eco.Lab1UnitTest</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Eco.Lab1UnitTest</string>
+			<key>timeStartedRecording</key>
+			<real>736687168.40432405</real>
+			<key>timeStoppedRecording</key>
+			<real>736687168.649647</real>
+			<key>title</key>
+			<string>Build Eco.Lab1UnitTest</string>
+			<key>uniqueIdentifier</key>
+			<string>B6706421-863B-4B7D-A415-DBD99B09BB65</string>
 		</dict>
 		<key>BD0B36DF-C873-40FB-AEB8-BAED1303062E</key>
 		<dict>
@@ -1937,6 +2231,48 @@
 			<string>Build Eco.Lab1UnitTest</string>
 			<key>uniqueIdentifier</key>
 			<string>DF92E47E-210F-4DA5-98CE-3DD01FE6B016</string>
+		</dict>
+		<key>E2B699CF-222B-42B0-8CD5-A751B9CA6F49</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>E2B699CF-222B-42B0-8CD5-A751B9CA6F49.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>91</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Eco.Lab1UnitTest project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Eco.Lab1UnitTest</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Eco.Lab1UnitTest</string>
+			<key>timeStartedRecording</key>
+			<real>736687098.39560604</real>
+			<key>timeStoppedRecording</key>
+			<real>736687098.68545496</real>
+			<key>title</key>
+			<string>Build Eco.Lab1UnitTest</string>
+			<key>uniqueIdentifier</key>
+			<string>E2B699CF-222B-42B0-8CD5-A751B9CA6F49</string>
 		</dict>
 		<key>EDB9E501-E8AC-4B7F-9E6C-250FD5A93BAD</key>
 		<dict>
